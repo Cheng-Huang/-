@@ -11,6 +11,10 @@
 		D2174CAF1D4E0F00009EA3EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */; };
 		D2174CB71D4E0F00009EA3EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2174CB61D4E0F00009EA3EB /* Assets.xcassets */; };
 		D2174CC31D4E1266009EA3EB /* HCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */; };
+		D2174CC61D4E267B009EA3EB /* HCEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CC51D4E267B009EA3EB /* HCEssenceViewController.m */; };
+		D2174CC91D4E279C009EA3EB /* HCNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CC81D4E279C009EA3EB /* HCNewViewController.m */; };
+		D2174CCC1D4E27B6009EA3EB /* HCFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CCB1D4E27B6009EA3EB /* HCFriendTrendsViewController.m */; };
+		D2174CCF1D4E27C0009EA3EB /* HCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,14 @@
 		D2174CBB1D4E0F00009EA3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2174CC11D4E1266009EA3EB /* HCTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBarViewController.h; sourceTree = "<group>"; };
 		D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBarViewController.m; sourceTree = "<group>"; };
+		D2174CC41D4E267B009EA3EB /* HCEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCEssenceViewController.h; sourceTree = "<group>"; };
+		D2174CC51D4E267B009EA3EB /* HCEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCEssenceViewController.m; sourceTree = "<group>"; };
+		D2174CC71D4E279C009EA3EB /* HCNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCNewViewController.h; sourceTree = "<group>"; };
+		D2174CC81D4E279C009EA3EB /* HCNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCNewViewController.m; sourceTree = "<group>"; };
+		D2174CCA1D4E27B6009EA3EB /* HCFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCFriendTrendsViewController.h; sourceTree = "<group>"; };
+		D2174CCB1D4E27B6009EA3EB /* HCFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCFriendTrendsViewController.m; sourceTree = "<group>"; };
+		D2174CCD1D4E27C0009EA3EB /* HCMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCMeViewController.h; sourceTree = "<group>"; };
+		D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,14 @@
 			children = (
 				D2174CAD1D4E0F00009EA3EB /* AppDelegate.h */,
 				D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */,
+				D2174CC41D4E267B009EA3EB /* HCEssenceViewController.h */,
+				D2174CC51D4E267B009EA3EB /* HCEssenceViewController.m */,
+				D2174CC71D4E279C009EA3EB /* HCNewViewController.h */,
+				D2174CC81D4E279C009EA3EB /* HCNewViewController.m */,
+				D2174CCA1D4E27B6009EA3EB /* HCFriendTrendsViewController.h */,
+				D2174CCB1D4E27B6009EA3EB /* HCFriendTrendsViewController.m */,
+				D2174CCD1D4E27C0009EA3EB /* HCMeViewController.h */,
+				D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */,
 				D2174CC11D4E1266009EA3EB /* HCTabBarViewController.h */,
 				D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */,
 				D2174CAA1D4E0F00009EA3EB /* Supporting Files */,
@@ -143,9 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2174CC61D4E267B009EA3EB /* HCEssenceViewController.m in Sources */,
+				D2174CC91D4E279C009EA3EB /* HCNewViewController.m in Sources */,
 				D2174CAF1D4E0F00009EA3EB /* AppDelegate.m in Sources */,
+				D2174CCC1D4E27B6009EA3EB /* HCFriendTrendsViewController.m in Sources */,
 				D2174CC31D4E1266009EA3EB /* HCTabBarViewController.m in Sources */,
 				D2174CAC1D4E0F00009EA3EB /* main.m in Sources */,
+				D2174CCF1D4E27C0009EA3EB /* HCMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
