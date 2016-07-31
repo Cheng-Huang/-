@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		D2174CAC1D4E0F00009EA3EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CAB1D4E0F00009EA3EB /* main.m */; };
 		D2174CAF1D4E0F00009EA3EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */; };
-		D2174CB21D4E0F00009EA3EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CB11D4E0F00009EA3EB /* ViewController.m */; };
 		D2174CB71D4E0F00009EA3EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2174CB61D4E0F00009EA3EB /* Assets.xcassets */; };
+		D2174CC31D4E1266009EA3EB /* HCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,10 +18,10 @@
 		D2174CAB1D4E0F00009EA3EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2174CAD1D4E0F00009EA3EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D2174CB01D4E0F00009EA3EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D2174CB11D4E0F00009EA3EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D2174CB61D4E0F00009EA3EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2174CBB1D4E0F00009EA3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2174CC11D4E1266009EA3EB /* HCTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBarViewController.h; sourceTree = "<group>"; };
+		D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,8 @@
 			children = (
 				D2174CAD1D4E0F00009EA3EB /* AppDelegate.h */,
 				D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */,
-				D2174CB01D4E0F00009EA3EB /* ViewController.h */,
-				D2174CB11D4E0F00009EA3EB /* ViewController.m */,
-				D2174CB61D4E0F00009EA3EB /* Assets.xcassets */,
-				D2174CBB1D4E0F00009EA3EB /* Info.plist */,
+				D2174CC11D4E1266009EA3EB /* HCTabBarViewController.h */,
+				D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */,
 				D2174CAA1D4E0F00009EA3EB /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -68,6 +66,8 @@
 		D2174CAA1D4E0F00009EA3EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2174CB61D4E0F00009EA3EB /* Assets.xcassets */,
+				D2174CBB1D4E0F00009EA3EB /* Info.plist */,
 				D2174CAB1D4E0F00009EA3EB /* main.m */,
 			);
 			name = "Supporting Files";
@@ -143,8 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2174CB21D4E0F00009EA3EB /* ViewController.m in Sources */,
 				D2174CAF1D4E0F00009EA3EB /* AppDelegate.m in Sources */,
+				D2174CC31D4E1266009EA3EB /* HCTabBarViewController.m in Sources */,
 				D2174CAC1D4E0F00009EA3EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +245,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.ecnu.huangcheng.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -257,6 +258,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.ecnu.huangcheng.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

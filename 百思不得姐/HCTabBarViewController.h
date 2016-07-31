@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HCTabBarViewController.h
 //  百思不得姐
 //
 //  Created by 成 黄 on 16/7/31.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HCTabBarViewController : UITabBarController
 
 @end
-
