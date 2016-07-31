@@ -11,6 +11,7 @@
 #import "HCNewViewController.h"
 #import "HCFriendTrendsViewController.h"
 #import "HCMeViewController.h"
+#import "HCTabBar.h"
 
 @interface HCTabBarViewController ()
 
@@ -45,6 +46,10 @@
     [self setUpChildVC:[[HCFriendTrendsViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
     [self setUpChildVC:[[HCMeViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    
+    // 更换UITabBar(read-only) => 自定义HCTabBar (KVC)
+    [self setValue:[[HCTabBar alloc] init] forKey:@"tabBar"];
+    
     
 }
 

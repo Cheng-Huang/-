@@ -15,6 +15,7 @@
 		D2174CC91D4E279C009EA3EB /* HCNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CC81D4E279C009EA3EB /* HCNewViewController.m */; };
 		D2174CCC1D4E27B6009EA3EB /* HCFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CCB1D4E27B6009EA3EB /* HCFriendTrendsViewController.m */; };
 		D2174CCF1D4E27C0009EA3EB /* HCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */; };
+		D2174CD21D4E2905009EA3EB /* HCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CD11D4E2905009EA3EB /* HCTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		D2174CCB1D4E27B6009EA3EB /* HCFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCFriendTrendsViewController.m; sourceTree = "<group>"; };
 		D2174CCD1D4E27C0009EA3EB /* HCMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCMeViewController.h; sourceTree = "<group>"; };
 		D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCMeViewController.m; sourceTree = "<group>"; };
+		D2174CD01D4E2905009EA3EB /* HCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBar.h; sourceTree = "<group>"; };
+		D2174CD11D4E2905009EA3EB /* HCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */,
 				D2174CC11D4E1266009EA3EB /* HCTabBarViewController.h */,
 				D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */,
+				D2174CD01D4E2905009EA3EB /* HCTabBar.h */,
+				D2174CD11D4E2905009EA3EB /* HCTabBar.m */,
 				D2174CAA1D4E0F00009EA3EB /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -167,6 +172,7 @@
 				D2174CC91D4E279C009EA3EB /* HCNewViewController.m in Sources */,
 				D2174CAF1D4E0F00009EA3EB /* AppDelegate.m in Sources */,
 				D2174CCC1D4E27B6009EA3EB /* HCFriendTrendsViewController.m in Sources */,
+				D2174CD21D4E2905009EA3EB /* HCTabBar.m in Sources */,
 				D2174CC31D4E1266009EA3EB /* HCTabBarViewController.m in Sources */,
 				D2174CAC1D4E0F00009EA3EB /* main.m in Sources */,
 				D2174CCF1D4E27C0009EA3EB /* HCMeViewController.m in Sources */,
