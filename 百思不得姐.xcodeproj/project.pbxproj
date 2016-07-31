@@ -10,9 +10,7 @@
 		D2174CAC1D4E0F00009EA3EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CAB1D4E0F00009EA3EB /* main.m */; };
 		D2174CAF1D4E0F00009EA3EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */; };
 		D2174CB21D4E0F00009EA3EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CB11D4E0F00009EA3EB /* ViewController.m */; };
-		D2174CB51D4E0F00009EA3EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2174CB31D4E0F00009EA3EB /* Main.storyboard */; };
 		D2174CB71D4E0F00009EA3EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2174CB61D4E0F00009EA3EB /* Assets.xcassets */; };
-		D2174CBA1D4E0F00009EA3EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2174CB81D4E0F00009EA3EB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +20,7 @@
 		D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D2174CB01D4E0F00009EA3EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D2174CB11D4E0F00009EA3EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D2174CB41D4E0F00009EA3EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2174CB61D4E0F00009EA3EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2174CB91D4E0F00009EA3EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2174CBB1D4E0F00009EA3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,9 +58,7 @@
 				D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */,
 				D2174CB01D4E0F00009EA3EB /* ViewController.h */,
 				D2174CB11D4E0F00009EA3EB /* ViewController.m */,
-				D2174CB31D4E0F00009EA3EB /* Main.storyboard */,
 				D2174CB61D4E0F00009EA3EB /* Assets.xcassets */,
-				D2174CB81D4E0F00009EA3EB /* LaunchScreen.storyboard */,
 				D2174CBB1D4E0F00009EA3EB /* Info.plist */,
 				D2174CAA1D4E0F00009EA3EB /* Supporting Files */,
 			);
@@ -105,6 +99,7 @@
 		D2174C9F1D4E0F00009EA3EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HC;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "成 黄";
 				TargetAttributes = {
@@ -137,9 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2174CBA1D4E0F00009EA3EB /* LaunchScreen.storyboard in Resources */,
 				D2174CB71D4E0F00009EA3EB /* Assets.xcassets in Resources */,
-				D2174CB51D4E0F00009EA3EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,25 +150,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D2174CB31D4E0F00009EA3EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2174CB41D4E0F00009EA3EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D2174CB81D4E0F00009EA3EB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2174CB91D4E0F00009EA3EB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D2174CBC1D4E0F00009EA3EB /* Debug */ = {
@@ -266,6 +240,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.ecnu.huangcheng.-----";
@@ -277,6 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.ecnu.huangcheng.-----";
