@@ -16,6 +16,7 @@
 		D2174CCC1D4E27B6009EA3EB /* HCFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CCB1D4E27B6009EA3EB /* HCFriendTrendsViewController.m */; };
 		D2174CCF1D4E27C0009EA3EB /* HCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */; };
 		D2174CD21D4E2905009EA3EB /* HCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CD11D4E2905009EA3EB /* HCTabBar.m */; };
+		D2174CD61D4E3250009EA3EB /* UIView+HCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CD51D4E3250009EA3EB /* UIView+HCExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,9 @@
 		D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCMeViewController.m; sourceTree = "<group>"; };
 		D2174CD01D4E2905009EA3EB /* HCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBar.h; sourceTree = "<group>"; };
 		D2174CD11D4E2905009EA3EB /* HCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBar.m; sourceTree = "<group>"; };
+		D2174CD31D4E3217009EA3EB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D2174CD41D4E3250009EA3EB /* UIView+HCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HCExtension.h"; sourceTree = "<group>"; };
+		D2174CD51D4E3250009EA3EB /* UIView+HCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HCExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,9 @@
 				D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */,
 				D2174CD01D4E2905009EA3EB /* HCTabBar.h */,
 				D2174CD11D4E2905009EA3EB /* HCTabBar.m */,
+				D2174CD41D4E3250009EA3EB /* UIView+HCExtension.h */,
+				D2174CD51D4E3250009EA3EB /* UIView+HCExtension.m */,
+				D2174CD31D4E3217009EA3EB /* PrefixHeader.pch */,
 				D2174CAA1D4E0F00009EA3EB /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -175,6 +182,7 @@
 				D2174CD21D4E2905009EA3EB /* HCTabBar.m in Sources */,
 				D2174CC31D4E1266009EA3EB /* HCTabBarViewController.m in Sources */,
 				D2174CAC1D4E0F00009EA3EB /* main.m in Sources */,
+				D2174CD61D4E3250009EA3EB /* UIView+HCExtension.m in Sources */,
 				D2174CCF1D4E27C0009EA3EB /* HCMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.ecnu.huangcheng.-----";
@@ -284,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.ecnu.huangcheng.-----";

@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by 成 黄 on 16/7/31.
+//  Copyright © 2016年 成 黄. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+HCExtension.h"
+
+#endif /* PrefixHeader_pch */

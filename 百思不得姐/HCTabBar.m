@@ -7,6 +7,7 @@
 //
 
 #import "HCTabBar.h"
+#import "UIView+HCExtension.h"
 
 @interface HCTabBar()
 
@@ -32,12 +33,12 @@
     
     // 设置发布按钮的frame
     self.publishButton.bounds = CGRectMake(0, 0, self.publishButton.currentBackgroundImage.size.width, self.publishButton.currentBackgroundImage.size.height);
-    self.publishButton.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+    self.publishButton.center = CGPointMake(self.width * 0.5, self.height * 0.5);
     
     // 设置其他UITabBarButton的frame
     CGFloat buttonY = 0;
-    CGFloat buttonW = self.frame.size.width / 5;
-    CGFloat buttonH = self.frame.size.height;
+    CGFloat buttonW = self.width / 5;
+    CGFloat buttonH = self.height;
     NSInteger index = 0;
     for (UIView *button in self.subviews) {
         if (![button isKindOfClass:NSClassFromString(@"UITabBarButton")]) continue;
