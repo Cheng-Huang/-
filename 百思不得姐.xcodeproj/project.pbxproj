@@ -18,8 +18,8 @@
 		D2174D0A1D4EFE36009EA3EB /* HCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CFD1D4EFE36009EA3EB /* HCTabBarViewController.m */; };
 		D2174D0B1D4EFE36009EA3EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CFE1D4EFE36009EA3EB /* main.m */; };
 		D2174D0C1D4EFE36009EA3EB /* HCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174D021D4EFE36009EA3EB /* HCTabBar.m */; };
-		D2174D121D4F2191009EA3EB /* HCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174D111D4F2191009EA3EB /* HCNavigationController.m */; };
 		D2174D151D4F84A9009EA3EB /* XMGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174D141D4F84A9009EA3EB /* XMGTestViewController.m */; };
+		D2174D181D4F8BFA009EA3EB /* HCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174D171D4F8BFA009EA3EB /* HCNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +46,10 @@
 		D2174CFF1D4EFE36009EA3EB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D2174D011D4EFE36009EA3EB /* HCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBar.h; sourceTree = "<group>"; };
 		D2174D021D4EFE36009EA3EB /* HCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBar.m; sourceTree = "<group>"; };
-		D2174D101D4F2191009EA3EB /* HCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCNavigationController.h; sourceTree = "<group>"; };
-		D2174D111D4F2191009EA3EB /* HCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCNavigationController.m; sourceTree = "<group>"; };
 		D2174D131D4F84A9009EA3EB /* XMGTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTestViewController.h; sourceTree = "<group>"; };
 		D2174D141D4F84A9009EA3EB /* XMGTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTestViewController.m; sourceTree = "<group>"; };
+		D2174D161D4F8BFA009EA3EB /* HCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCNavigationController.h; path = Controller/HCNavigationController.h; sourceTree = "<group>"; };
+		D2174D171D4F8BFA009EA3EB /* HCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCNavigationController.m; path = Controller/HCNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,8 +191,6 @@
 			children = (
 				D2174CE91D4EFE36009EA3EB /* HCMeViewController.h */,
 				D2174CEA1D4EFE36009EA3EB /* HCMeViewController.m */,
-				D2174D101D4F2191009EA3EB /* HCNavigationController.h */,
-				D2174D111D4F2191009EA3EB /* HCNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,6 +245,8 @@
 		D2174CF31D4EFE36009EA3EB /* Other-其他 */ = {
 			isa = PBXGroup;
 			children = (
+				D2174D161D4F8BFA009EA3EB /* HCNavigationController.h */,
+				D2174D171D4F8BFA009EA3EB /* HCNavigationController.m */,
 				D2174CF41D4EFE36009EA3EB /* AppDelegate.h */,
 				D2174CF51D4EFE36009EA3EB /* AppDelegate.m */,
 				D2174CF61D4EFE36009EA3EB /* Category */,
@@ -361,11 +361,11 @@
 			files = (
 				D2174D061D4EFE36009EA3EB /* HCNewViewController.m in Sources */,
 				D2174D0A1D4EFE36009EA3EB /* HCTabBarViewController.m in Sources */,
+				D2174D181D4F8BFA009EA3EB /* HCNavigationController.m in Sources */,
 				D2174D051D4EFE36009EA3EB /* HCMeViewController.m in Sources */,
 				D2174D031D4EFE36009EA3EB /* HCEssenceViewController.m in Sources */,
 				D2174D081D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.m in Sources */,
 				D2174D041D4EFE36009EA3EB /* HCFriendTrendsViewController.m in Sources */,
-				D2174D121D4F2191009EA3EB /* HCNavigationController.m in Sources */,
 				D2174D091D4EFE36009EA3EB /* UIView+HCExtension.m in Sources */,
 				D2174D0B1D4EFE36009EA3EB /* main.m in Sources */,
 				D2174D151D4F84A9009EA3EB /* XMGTestViewController.m in Sources */,
