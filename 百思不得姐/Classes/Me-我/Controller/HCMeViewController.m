@@ -25,6 +25,9 @@
     UIBarButtonItem *nightModeButton = [UIBarButtonItem itemWithimage:(NSString *)@"mine-moon-icon" highLightedImage:(NSString *)@"mine-moon-icon-click" target:self action:@selector(nightModeClick)];
     
     self.navigationItem.rightBarButtonItems = @[settingButton, nightModeButton];
+    
+    // 设置背景色
+    self.view.backgroundColor = HCGlobalBg;
 }
 
 - (void)settingClick {

@@ -23,10 +23,19 @@
     // 设置导航栏左边的按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithimage:(NSString *)@"friendsRecommentIcon" highLightedImage:(NSString *)@"friendsRecommentIcon-click" target:self action:@selector(friendsClick)];
     
+    // 设置背景色
+    self.view.backgroundColor = HCGlobalBg;
 }
 
 - (void)friendsClick {
     HCLogFunc;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = HCRGBColor(200, 100, 50);
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

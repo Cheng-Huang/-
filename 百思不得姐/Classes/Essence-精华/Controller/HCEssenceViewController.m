@@ -7,6 +7,7 @@
 //
 
 #import "HCEssenceViewController.h"
+#import "XMGTestViewController.h"
 
 @interface HCEssenceViewController ()
 
@@ -23,10 +24,17 @@
     // 设置导航栏左边的按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithimage:(NSString *)@"MainTagSubIcon" highLightedImage:(NSString *)@"MainTagSubIconClick" target:self action:@selector(tagClick)];
     
+    // 设置背景色
+    self.view.backgroundColor = HCGlobalBg;
 }
 
 - (void)tagClick {
     HCLogFunc;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    XMGTestViewController *vc = [[XMGTestViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
