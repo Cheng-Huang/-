@@ -20,10 +20,7 @@
 
 @implementation HCTabBarViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
++ (void)initialize {
     // 设置tabBarItem文字颜色
     NSMutableDictionary *attrDict = [NSMutableDictionary dictionary];
     attrDict[NSFontAttributeName] = [UIFont systemFontOfSize:12];
@@ -37,7 +34,10 @@
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrDict forState:UIControlStateNormal];
     [item setTitleTextAttributes:attrSelectedDict forState:UIControlStateSelected];
-    
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
     // 添加子视图控制器
     [self setUpChildVC:[[HCEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
@@ -63,14 +63,14 @@
  *  @param selectedImage tabBarItem图片-Selected
  */
 - (void)setUpChildVC:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage {
+    
+    // 设置文字和图片
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
-//    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100.0 alpha:1.0];
-    [self addChildViewController:vc];
+    
     // 包装一个导航控制器, 添加导航控制器为tabbarcontroller的子控制器
     HCNavigationController *nav = [[HCNavigationController alloc] initWithRootViewController:vc];
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     [self addChildViewController:nav];
 }
 
