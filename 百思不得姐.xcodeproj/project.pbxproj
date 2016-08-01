@@ -20,6 +20,7 @@
 		D2174D0C1D4EFE36009EA3EB /* HCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174D021D4EFE36009EA3EB /* HCTabBar.m */; };
 		D2174D151D4F84A9009EA3EB /* XMGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174D141D4F84A9009EA3EB /* XMGTestViewController.m */; };
 		D2174D181D4F8BFA009EA3EB /* HCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174D171D4F8BFA009EA3EB /* HCNavigationController.m */; };
+		D2174D1A1D4F90F7009EA3EB /* HCFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2174D191D4F90F7009EA3EB /* HCFriendTrendsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		D2174D141D4F84A9009EA3EB /* XMGTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTestViewController.m; sourceTree = "<group>"; };
 		D2174D161D4F8BFA009EA3EB /* HCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCNavigationController.h; sourceTree = "<group>"; };
 		D2174D171D4F8BFA009EA3EB /* HCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCNavigationController.m; sourceTree = "<group>"; };
+		D2174D191D4F90F7009EA3EB /* HCFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCFriendTrendsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			children = (
 				D2174CE31D4EFE36009EA3EB /* HCFriendTrendsViewController.h */,
 				D2174CE41D4EFE36009EA3EB /* HCFriendTrendsViewController.m */,
+				D2174D191D4F90F7009EA3EB /* HCFriendTrendsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2174D1A1D4F90F7009EA3EB /* HCFriendTrendsViewController.xib in Resources */,
 				D2174CB71D4E0F00009EA3EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
