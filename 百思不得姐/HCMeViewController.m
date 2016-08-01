@@ -21,20 +21,10 @@
     self.navigationItem.title = @"我的";
     
     // 设置导航栏右边的按钮
-    UIButton *settingButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [settingButton setBackgroundImage:[UIImage imageNamed:@"mine-setting-icon"] forState:UIControlStateNormal];
-    [settingButton setBackgroundImage:[UIImage imageNamed:@"mine-setting-icon-click"] forState:UIControlStateHighlighted];
-    [settingButton addTarget:self action:@selector(settingClick) forControlEvents:UIControlEventTouchUpInside];
-    settingButton.size = settingButton.currentBackgroundImage.size;
-    UIButton *nightModeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [nightModeButton setBackgroundImage:[UIImage imageNamed:@"mine-moon-icon"] forState:UIControlStateNormal];
-    [nightModeButton setBackgroundImage:[UIImage imageNamed:@"mine-moon-icon-click"] forState:UIControlStateHighlighted];
-    [nightModeButton addTarget:self action:@selector(nightModeClick) forControlEvents:UIControlEventTouchUpInside];
-    nightModeButton.size = nightModeButton.currentBackgroundImage.size;
-    self.navigationItem.rightBarButtonItems = @[
-                                                [[UIBarButtonItem alloc] initWithCustomView:settingButton],
-                                                [[UIBarButtonItem alloc] initWithCustomView:nightModeButton]
-                                                ];
+    UIBarButtonItem *settingButton = [UIBarButtonItem itemWithimage:(NSString *)@"mine-setting-icon" highLightedImage:(NSString *)@"mine-setting-icon-click" target:self action:@selector(settingClick)];
+    UIBarButtonItem *nightModeButton = [UIBarButtonItem itemWithimage:(NSString *)@"mine-moon-icon" highLightedImage:(NSString *)@"mine-moon-icon-click" target:self action:@selector(nightModeClick)];
+    
+    self.navigationItem.rightBarButtonItems = @[settingButton, nightModeButton];
 }
 
 - (void)settingClick {

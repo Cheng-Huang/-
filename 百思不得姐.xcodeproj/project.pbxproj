@@ -17,6 +17,7 @@
 		D2174CCF1D4E27C0009EA3EB /* HCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */; };
 		D2174CD21D4E2905009EA3EB /* HCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CD11D4E2905009EA3EB /* HCTabBar.m */; };
 		D2174CD61D4E3250009EA3EB /* UIView+HCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CD51D4E3250009EA3EB /* UIView+HCExtension.m */; };
+		D2174CD91D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CD81D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		D2174CD31D4E3217009EA3EB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D2174CD41D4E3250009EA3EB /* UIView+HCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HCExtension.h"; sourceTree = "<group>"; };
 		D2174CD51D4E3250009EA3EB /* UIView+HCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HCExtension.m"; sourceTree = "<group>"; };
+		D2174CD71D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HCExtension.h"; sourceTree = "<group>"; };
+		D2174CD81D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HCExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				D2174CD11D4E2905009EA3EB /* HCTabBar.m */,
 				D2174CD41D4E3250009EA3EB /* UIView+HCExtension.h */,
 				D2174CD51D4E3250009EA3EB /* UIView+HCExtension.m */,
+				D2174CD71D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.h */,
+				D2174CD81D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.m */,
 				D2174CD31D4E3217009EA3EB /* PrefixHeader.pch */,
 				D2174CAA1D4E0F00009EA3EB /* Supporting Files */,
 			);
@@ -180,6 +185,7 @@
 				D2174CAF1D4E0F00009EA3EB /* AppDelegate.m in Sources */,
 				D2174CCC1D4E27B6009EA3EB /* HCFriendTrendsViewController.m in Sources */,
 				D2174CD21D4E2905009EA3EB /* HCTabBar.m in Sources */,
+				D2174CD91D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.m in Sources */,
 				D2174CC31D4E1266009EA3EB /* HCTabBarViewController.m in Sources */,
 				D2174CAC1D4E0F00009EA3EB /* main.m in Sources */,
 				D2174CD61D4E3250009EA3EB /* UIView+HCExtension.m in Sources */,
