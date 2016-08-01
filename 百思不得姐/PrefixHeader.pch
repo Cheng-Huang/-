@@ -11,4 +11,12 @@
 
 #import "UIView+HCExtension.h"
 
+#ifdef DEBUG
+#define HCLog(...) NSLog(__VA_ARGS__)
+#else
+#define HCLog(...)
+#endif
+
+#define HCLogFunc HCLog(@"%s", __func__)
+
 #endif /* PrefixHeader_pch */

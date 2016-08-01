@@ -7,7 +7,6 @@
 //
 
 #import "HCTabBar.h"
-#import "UIView+HCExtension.h"
 
 @interface HCTabBar()
 

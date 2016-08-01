@@ -9,6 +9,13 @@
 #import "UIView+HCExtension.h"
 
 @implementation UIView (HCExtension)
+- (void)setSize:(CGSize)size
+{
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+
 - (void)setWidth:(CGFloat)width
 {
     CGRect frame = self.frame;
@@ -35,6 +42,11 @@
     CGRect frame = self.frame;
     frame.origin.y = y;
     self.frame = frame;
+}
+
+- (CGSize)size
+{
+    return self.frame.size;
 }
 
 - (CGFloat)width
