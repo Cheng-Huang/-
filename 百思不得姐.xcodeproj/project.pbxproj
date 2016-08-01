@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2174CAC1D4E0F00009EA3EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CAB1D4E0F00009EA3EB /* main.m */; };
-		D2174CAF1D4E0F00009EA3EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */; };
 		D2174CB71D4E0F00009EA3EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2174CB61D4E0F00009EA3EB /* Assets.xcassets */; };
-		D2174CC31D4E1266009EA3EB /* HCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */; };
-		D2174CC61D4E267B009EA3EB /* HCEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CC51D4E267B009EA3EB /* HCEssenceViewController.m */; };
-		D2174CC91D4E279C009EA3EB /* HCNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CC81D4E279C009EA3EB /* HCNewViewController.m */; };
-		D2174CCC1D4E27B6009EA3EB /* HCFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CCB1D4E27B6009EA3EB /* HCFriendTrendsViewController.m */; };
-		D2174CCF1D4E27C0009EA3EB /* HCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */; };
-		D2174CD21D4E2905009EA3EB /* HCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CD11D4E2905009EA3EB /* HCTabBar.m */; };
-		D2174CD61D4E3250009EA3EB /* UIView+HCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CD51D4E3250009EA3EB /* UIView+HCExtension.m */; };
-		D2174CD91D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CD81D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.m */; };
+		D2174D031D4EFE36009EA3EB /* HCEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CDE1D4EFE36009EA3EB /* HCEssenceViewController.m */; };
+		D2174D041D4EFE36009EA3EB /* HCFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CE41D4EFE36009EA3EB /* HCFriendTrendsViewController.m */; };
+		D2174D051D4EFE36009EA3EB /* HCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CEA1D4EFE36009EA3EB /* HCMeViewController.m */; };
+		D2174D061D4EFE36009EA3EB /* HCNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CF01D4EFE36009EA3EB /* HCNewViewController.m */; };
+		D2174D071D4EFE36009EA3EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CF51D4EFE36009EA3EB /* AppDelegate.m */; };
+		D2174D081D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CF81D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.m */; };
+		D2174D091D4EFE36009EA3EB /* UIView+HCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CFA1D4EFE36009EA3EB /* UIView+HCExtension.m */; };
+		D2174D0A1D4EFE36009EA3EB /* HCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CFD1D4EFE36009EA3EB /* HCTabBarViewController.m */; };
+		D2174D0B1D4EFE36009EA3EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174CFE1D4EFE36009EA3EB /* main.m */; };
+		D2174D0C1D4EFE36009EA3EB /* HCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2174D021D4EFE36009EA3EB /* HCTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D2174CA71D4E0F00009EA3EB /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2174CAB1D4E0F00009EA3EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D2174CAD1D4E0F00009EA3EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D2174CB61D4E0F00009EA3EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2174CBB1D4E0F00009EA3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2174CC11D4E1266009EA3EB /* HCTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBarViewController.h; sourceTree = "<group>"; };
-		D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBarViewController.m; sourceTree = "<group>"; };
-		D2174CC41D4E267B009EA3EB /* HCEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCEssenceViewController.h; sourceTree = "<group>"; };
-		D2174CC51D4E267B009EA3EB /* HCEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCEssenceViewController.m; sourceTree = "<group>"; };
-		D2174CC71D4E279C009EA3EB /* HCNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCNewViewController.h; sourceTree = "<group>"; };
-		D2174CC81D4E279C009EA3EB /* HCNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCNewViewController.m; sourceTree = "<group>"; };
-		D2174CCA1D4E27B6009EA3EB /* HCFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCFriendTrendsViewController.h; sourceTree = "<group>"; };
-		D2174CCB1D4E27B6009EA3EB /* HCFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCFriendTrendsViewController.m; sourceTree = "<group>"; };
-		D2174CCD1D4E27C0009EA3EB /* HCMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCMeViewController.h; sourceTree = "<group>"; };
-		D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCMeViewController.m; sourceTree = "<group>"; };
-		D2174CD01D4E2905009EA3EB /* HCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBar.h; sourceTree = "<group>"; };
-		D2174CD11D4E2905009EA3EB /* HCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBar.m; sourceTree = "<group>"; };
-		D2174CD31D4E3217009EA3EB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		D2174CD41D4E3250009EA3EB /* UIView+HCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HCExtension.h"; sourceTree = "<group>"; };
-		D2174CD51D4E3250009EA3EB /* UIView+HCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HCExtension.m"; sourceTree = "<group>"; };
-		D2174CD71D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HCExtension.h"; sourceTree = "<group>"; };
-		D2174CD81D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HCExtension.m"; sourceTree = "<group>"; };
+		D2174CDD1D4EFE36009EA3EB /* HCEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCEssenceViewController.h; sourceTree = "<group>"; };
+		D2174CDE1D4EFE36009EA3EB /* HCEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCEssenceViewController.m; sourceTree = "<group>"; };
+		D2174CE31D4EFE36009EA3EB /* HCFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCFriendTrendsViewController.h; sourceTree = "<group>"; };
+		D2174CE41D4EFE36009EA3EB /* HCFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCFriendTrendsViewController.m; sourceTree = "<group>"; };
+		D2174CE91D4EFE36009EA3EB /* HCMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCMeViewController.h; sourceTree = "<group>"; };
+		D2174CEA1D4EFE36009EA3EB /* HCMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCMeViewController.m; sourceTree = "<group>"; };
+		D2174CEF1D4EFE36009EA3EB /* HCNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCNewViewController.h; sourceTree = "<group>"; };
+		D2174CF01D4EFE36009EA3EB /* HCNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCNewViewController.m; sourceTree = "<group>"; };
+		D2174CF41D4EFE36009EA3EB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2174CF51D4EFE36009EA3EB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2174CF71D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HCExtension.h"; sourceTree = "<group>"; };
+		D2174CF81D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HCExtension.m"; sourceTree = "<group>"; };
+		D2174CF91D4EFE36009EA3EB /* UIView+HCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HCExtension.h"; sourceTree = "<group>"; };
+		D2174CFA1D4EFE36009EA3EB /* UIView+HCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HCExtension.m"; sourceTree = "<group>"; };
+		D2174CFC1D4EFE36009EA3EB /* HCTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBarViewController.h; sourceTree = "<group>"; };
+		D2174CFD1D4EFE36009EA3EB /* HCTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBarViewController.m; sourceTree = "<group>"; };
+		D2174CFE1D4EFE36009EA3EB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2174CFF1D4EFE36009EA3EB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D2174D011D4EFE36009EA3EB /* HCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBar.h; sourceTree = "<group>"; };
+		D2174D021D4EFE36009EA3EB /* HCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +60,7 @@
 		D2174C9E1D4E0F00009EA3EB = {
 			isa = PBXGroup;
 			children = (
+				D2174CDA1D4EFE36009EA3EB /* Classes */,
 				D2174CA91D4E0F00009EA3EB /* 百思不得姐 */,
 				D2174CA81D4E0F00009EA3EB /* Products */,
 			);
@@ -76,25 +77,6 @@
 		D2174CA91D4E0F00009EA3EB /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				D2174CAD1D4E0F00009EA3EB /* AppDelegate.h */,
-				D2174CAE1D4E0F00009EA3EB /* AppDelegate.m */,
-				D2174CC41D4E267B009EA3EB /* HCEssenceViewController.h */,
-				D2174CC51D4E267B009EA3EB /* HCEssenceViewController.m */,
-				D2174CC71D4E279C009EA3EB /* HCNewViewController.h */,
-				D2174CC81D4E279C009EA3EB /* HCNewViewController.m */,
-				D2174CCA1D4E27B6009EA3EB /* HCFriendTrendsViewController.h */,
-				D2174CCB1D4E27B6009EA3EB /* HCFriendTrendsViewController.m */,
-				D2174CCD1D4E27C0009EA3EB /* HCMeViewController.h */,
-				D2174CCE1D4E27C0009EA3EB /* HCMeViewController.m */,
-				D2174CC11D4E1266009EA3EB /* HCTabBarViewController.h */,
-				D2174CC21D4E1266009EA3EB /* HCTabBarViewController.m */,
-				D2174CD01D4E2905009EA3EB /* HCTabBar.h */,
-				D2174CD11D4E2905009EA3EB /* HCTabBar.m */,
-				D2174CD41D4E3250009EA3EB /* UIView+HCExtension.h */,
-				D2174CD51D4E3250009EA3EB /* UIView+HCExtension.m */,
-				D2174CD71D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.h */,
-				D2174CD81D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.m */,
-				D2174CD31D4E3217009EA3EB /* PrefixHeader.pch */,
 				D2174CAA1D4E0F00009EA3EB /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -105,9 +87,196 @@
 			children = (
 				D2174CB61D4E0F00009EA3EB /* Assets.xcassets */,
 				D2174CBB1D4E0F00009EA3EB /* Info.plist */,
-				D2174CAB1D4E0F00009EA3EB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2174CDA1D4EFE36009EA3EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CDB1D4EFE36009EA3EB /* Essence-精华 */,
+				D2174CE11D4EFE36009EA3EB /* FriendTrends-关注 */,
+				D2174CE71D4EFE36009EA3EB /* Me-我 */,
+				D2174CED1D4EFE36009EA3EB /* New-新帖 */,
+				D2174CF31D4EFE36009EA3EB /* Other-其他 */,
+			);
+			name = Classes;
+			path = "百思不得姐/Classes";
+			sourceTree = "<group>";
+		};
+		D2174CDB1D4EFE36009EA3EB /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CDC1D4EFE36009EA3EB /* Controller */,
+				D2174CDF1D4EFE36009EA3EB /* Model */,
+				D2174CE01D4EFE36009EA3EB /* View */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		D2174CDC1D4EFE36009EA3EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CDD1D4EFE36009EA3EB /* HCEssenceViewController.h */,
+				D2174CDE1D4EFE36009EA3EB /* HCEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2174CDF1D4EFE36009EA3EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2174CE01D4EFE36009EA3EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2174CE11D4EFE36009EA3EB /* FriendTrends-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CE21D4EFE36009EA3EB /* Controller */,
+				D2174CE51D4EFE36009EA3EB /* Model */,
+				D2174CE61D4EFE36009EA3EB /* View */,
+			);
+			path = "FriendTrends-关注";
+			sourceTree = "<group>";
+		};
+		D2174CE21D4EFE36009EA3EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CE31D4EFE36009EA3EB /* HCFriendTrendsViewController.h */,
+				D2174CE41D4EFE36009EA3EB /* HCFriendTrendsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2174CE51D4EFE36009EA3EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2174CE61D4EFE36009EA3EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2174CE71D4EFE36009EA3EB /* Me-我 */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CE81D4EFE36009EA3EB /* Controller */,
+				D2174CEB1D4EFE36009EA3EB /* Model */,
+				D2174CEC1D4EFE36009EA3EB /* View */,
+			);
+			path = "Me-我";
+			sourceTree = "<group>";
+		};
+		D2174CE81D4EFE36009EA3EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CE91D4EFE36009EA3EB /* HCMeViewController.h */,
+				D2174CEA1D4EFE36009EA3EB /* HCMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2174CEB1D4EFE36009EA3EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2174CEC1D4EFE36009EA3EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2174CED1D4EFE36009EA3EB /* New-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CEE1D4EFE36009EA3EB /* Controller */,
+				D2174CF11D4EFE36009EA3EB /* Model */,
+				D2174CF21D4EFE36009EA3EB /* View */,
+			);
+			path = "New-新帖";
+			sourceTree = "<group>";
+		};
+		D2174CEE1D4EFE36009EA3EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CEF1D4EFE36009EA3EB /* HCNewViewController.h */,
+				D2174CF01D4EFE36009EA3EB /* HCNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2174CF11D4EFE36009EA3EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2174CF21D4EFE36009EA3EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2174CF31D4EFE36009EA3EB /* Other-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CF41D4EFE36009EA3EB /* AppDelegate.h */,
+				D2174CF51D4EFE36009EA3EB /* AppDelegate.m */,
+				D2174CF61D4EFE36009EA3EB /* Category */,
+				D2174CFB1D4EFE36009EA3EB /* Controller */,
+				D2174CFE1D4EFE36009EA3EB /* main.m */,
+				D2174CFF1D4EFE36009EA3EB /* PrefixHeader.pch */,
+				D2174D001D4EFE36009EA3EB /* View */,
+			);
+			path = "Other-其他";
+			sourceTree = "<group>";
+		};
+		D2174CF61D4EFE36009EA3EB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CF71D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.h */,
+				D2174CF81D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.m */,
+				D2174CF91D4EFE36009EA3EB /* UIView+HCExtension.h */,
+				D2174CFA1D4EFE36009EA3EB /* UIView+HCExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D2174CFB1D4EFE36009EA3EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2174CFC1D4EFE36009EA3EB /* HCTabBarViewController.h */,
+				D2174CFD1D4EFE36009EA3EB /* HCTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2174D001D4EFE36009EA3EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2174D011D4EFE36009EA3EB /* HCTabBar.h */,
+				D2174D021D4EFE36009EA3EB /* HCTabBar.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,16 +349,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2174CC61D4E267B009EA3EB /* HCEssenceViewController.m in Sources */,
-				D2174CC91D4E279C009EA3EB /* HCNewViewController.m in Sources */,
-				D2174CAF1D4E0F00009EA3EB /* AppDelegate.m in Sources */,
-				D2174CCC1D4E27B6009EA3EB /* HCFriendTrendsViewController.m in Sources */,
-				D2174CD21D4E2905009EA3EB /* HCTabBar.m in Sources */,
-				D2174CD91D4EEF68009EA3EB /* UIBarButtonItem+HCExtension.m in Sources */,
-				D2174CC31D4E1266009EA3EB /* HCTabBarViewController.m in Sources */,
-				D2174CAC1D4E0F00009EA3EB /* main.m in Sources */,
-				D2174CD61D4E3250009EA3EB /* UIView+HCExtension.m in Sources */,
-				D2174CCF1D4E27C0009EA3EB /* HCMeViewController.m in Sources */,
+				D2174D061D4EFE36009EA3EB /* HCNewViewController.m in Sources */,
+				D2174D0A1D4EFE36009EA3EB /* HCTabBarViewController.m in Sources */,
+				D2174D051D4EFE36009EA3EB /* HCMeViewController.m in Sources */,
+				D2174D031D4EFE36009EA3EB /* HCEssenceViewController.m in Sources */,
+				D2174D081D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.m in Sources */,
+				D2174D041D4EFE36009EA3EB /* HCFriendTrendsViewController.m in Sources */,
+				D2174D091D4EFE36009EA3EB /* UIView+HCExtension.m in Sources */,
+				D2174D0B1D4EFE36009EA3EB /* main.m in Sources */,
+				D2174D0C1D4EFE36009EA3EB /* HCTabBar.m in Sources */,
+				D2174D071D4EFE36009EA3EB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.ecnu.huangcheng.-----";
@@ -299,7 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.ecnu.huangcheng.-----";
