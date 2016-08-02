@@ -7,6 +7,7 @@
 //
 
 #import "HCFriendTrendsViewController.h"
+#import "HCRecommendViewController.h"
 
 @interface HCFriendTrendsViewController ()
 
@@ -28,7 +29,8 @@
 }
 
 - (void)friendsClick {
-    HCLogFunc;
+    HCRecommendViewController *recommendVC = [[HCRecommendViewController alloc] init];
+    [self.navigationController pushViewController:recommendVC animated:YES];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
