@@ -18,8 +18,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.backgroundColor = HCGlobalBg;
-    self.selectedIndicator.backgroundColor = [UIColor redColor];
+    self.backgroundColor = HCRGBColor(244, 244, 244);
+    self.selectedIndicator.backgroundColor = HCRGBColor(219, 21, 26);
 }
 
 - (void)setCategory:(HCRecommendCategory *)category {
@@ -28,13 +28,11 @@
 }
 
 -(void)layoutSubviews {
-    CGFloat labelX = self.selectedIndicator.width;
-    CGFloat labelY = 2.0;
-    CGFloat labelW = self.contentView.width - 2 * labelX;
-    CGFloat labelH = self.contentView.height - 2 * labelY;
+    [super layoutSubviews];
     
-    self.textLabel.frame = CGRectMake(labelX, labelY, labelW, labelH);
-    self.textLabel.textAlignment = NSTextAlignmentCenter;
+    // 重新调整内部textLabel的frame
+    self.textLabel.y = 2;
+    self.textLabel.height = self.contentView.height - 2 * self.textLabel.y;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

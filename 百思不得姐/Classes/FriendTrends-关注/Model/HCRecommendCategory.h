@@ -12,8 +12,11 @@
 
 /** 标签id */
 @property (assign, nonatomic) NSInteger id;
+
 /** 标签名称 */
 @property (copy, nonatomic) NSString *name;
+
 /** 此标签下的用户数 */
 @property (assign, nonatomic) NSInteger count;
+
 @end
