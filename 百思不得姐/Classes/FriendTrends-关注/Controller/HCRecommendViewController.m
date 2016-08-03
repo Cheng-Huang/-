@@ -17,8 +17,6 @@
 @interface HCRecommendViewController () <UITableViewDelegate, UITableViewDataSource>
 /** 类别模型数组 */
 @property (strong, nonatomic) NSArray *categories;
-/** 用户模型数组 */
-@property (strong, nonatomic) NSArray *users;
 @property (weak, nonatomic) IBOutlet UITableView *categoryTableView;
 @property (weak, nonatomic) IBOutlet UITableView *userTableView;
 
@@ -75,7 +73,9 @@ static NSString * const userID = @"user";
     if (tableView == self.categoryTableView) {
         return self.categories.count;
     } else {
-        return self.users.count;
+        HCRecommendCategory *category = self.categories[self.categoryTableView.indexPathForSelectedRow.row];
+        HCLog(@"%zd", category.users.count);
+        return category.users.count;
     }
 }
 
@@ -86,7 +86,8 @@ static NSString * const userID = @"user";
         return cell;
     } else {
         HCRecommendUserCell *cell = [tableView dequeueReusableCellWithIdentifier:userID];
-        cell.user = self.users[indexPath.row];
+        HCRecommendCategory *category = self.categories[self.categoryTableView.indexPathForSelectedRow.row];
+        cell.user = category.users[indexPath.row];
         return cell;
     }
     
@@ -98,17 +99,23 @@ static NSString * const userID = @"user";
     
     HCRecommendCategory *category = self.categories[indexPath.row];
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
-    params[@"c"] = @"subscribe";
-    params[@"category_id"] = @(category.id);
-    
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        HCLog(@"success----%@", responseObject);
-        self.users = [HCRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+    if (category.users.count) {
         [self.userTableView reloadData];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        HCLog(@"failure----%@", error);
-    }];
+    } else {
+        NSMutableDictionary *params = [NSMutableDictionary dictionary];
+        params[@"a"] = @"list";
+        params[@"c"] = @"subscribe";
+        params[@"category_id"] = @(category.id);
+        
+        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            HCLog(@"success----%@", responseObject);
+            NSArray *users = [HCRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+            [category.users addObjectsFromArray:users];
+            [self.userTableView reloadData];
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            HCLog(@"failure----%@", error);
+        }];        
+    }
+    
 }
 @end

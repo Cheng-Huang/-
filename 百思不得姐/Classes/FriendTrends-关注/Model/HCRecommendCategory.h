@@ -19,4 +19,6 @@
 /** 此标签下的用户数 */
 @property (assign, nonatomic) NSInteger count;
 
+/** 用户模型数组 */
+@property (strong, nonatomic) NSMutableArray *users;
 @end
