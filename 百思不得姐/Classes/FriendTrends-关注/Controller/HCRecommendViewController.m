@@ -8,15 +8,26 @@
 
 #import "HCRecommendViewController.h"
 #import <AFNetworking.h>
+#import "HCRecommendCategory.h"
+#import <MJExtension.h>
+#import "HCRecommendCategoryCell.h"
 
-@interface HCRecommendViewController ()
+@interface HCRecommendViewController () <UITableViewDelegate, UITableViewDataSource>
+/** 类别模型数组 */
+@property (strong, nonatomic) NSArray *categories;
+@property (weak, nonatomic) IBOutlet UITableView *categoryTableView;
 
 @end
 
 @implementation HCRecommendViewController
 
+static NSString * const categoryID = @"category";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 注册
+    [self.categoryTableView registerClass:[HCRecommendCategoryCell class] forCellReuseIdentifier:categoryID];
     
     self.title = @"推荐关注";
     
@@ -24,28 +35,25 @@
     params[@"a"] = @"category";
     params[@"c"] = @"subscribe";
     
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
-        HCLog(@"progress----%@", downloadProgress);
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         HCLog(@"success----%@", responseObject);
+        self.categories = [HCRecommendCategory mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        [self.categoryTableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         HCLog(@"failure----%@", error);
     }];
 }
+#pragma mark - Table view data source
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.categories.count;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    HCRecommendCategoryCell *cell = [tableView dequeueReusableCellWithIdentifier:categoryID];
+    HCRecommendCategory *category = self.categories[indexPath.row];
+    cell.textLabel.text = category.name;
+    return cell;
 }
-*/
 
 @end
