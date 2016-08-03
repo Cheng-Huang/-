@@ -27,9 +27,12 @@ static NSString * const categoryID = @"category";
     [super viewDidLoad];
     
     // 注册
-    [self.categoryTableView registerClass:[HCRecommendCategoryCell class] forCellReuseIdentifier:categoryID];
+    [self.categoryTableView registerNib:[UINib nibWithNibName:NSStringFromClass([HCRecommendCategoryCell class]) bundle:nil] forCellReuseIdentifier:categoryID];
     
     self.title = @"推荐关注";
+    
+    self.view.backgroundColor = HCGlobalBg;
+    self.categoryTableView.backgroundColor = HCGlobalBg;
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"category";
@@ -52,7 +55,7 @@ static NSString * const categoryID = @"category";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HCRecommendCategoryCell *cell = [tableView dequeueReusableCellWithIdentifier:categoryID];
     HCRecommendCategory *category = self.categories[indexPath.row];
-    cell.textLabel.text = category.name;
+    cell.category = category;
     return cell;
 }
 

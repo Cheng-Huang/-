@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class HCRecommendCategory;
 
 @interface HCRecommendCategoryCell : UITableViewCell
+
+/** 类别模型 */
+@property (strong, nonatomic) HCRecommendCategory *category;
 
 @end

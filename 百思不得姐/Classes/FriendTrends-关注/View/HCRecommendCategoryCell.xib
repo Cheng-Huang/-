@@ -7,13 +7,40 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="category" id="KGk-i7-Jjw" customClass="HCRecommendCategoryCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="category" id="KGk-i7-Jjw" customClass="HCRecommendCategoryCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VcW-XO-jPi" userLabel="分割线">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0TX-UF-Yus"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69W-oJ-3tc" userLabel="选中指示器">
+                        <rect key="frame" x="0.0" y="0.0" width="4" height="43.5"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="4" id="D0z-d0-fK2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VcW-XO-jPi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1KI-ut-6SK"/>
+                    <constraint firstAttribute="trailing" secondItem="VcW-XO-jPi" secondAttribute="trailing" id="RCe-Vu-jMd"/>
+                    <constraint firstAttribute="bottom" secondItem="69W-oJ-3tc" secondAttribute="bottom" id="YPg-0f-e1v"/>
+                    <constraint firstItem="69W-oJ-3tc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="m54-TN-7wE"/>
+                    <constraint firstAttribute="bottom" secondItem="VcW-XO-jPi" secondAttribute="bottom" id="tc1-bG-2nF"/>
+                    <constraint firstItem="69W-oJ-3tc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yOZ-Pu-FKz"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="selectedIndicator" destination="69W-oJ-3tc" id="ytc-Se-sGp"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
