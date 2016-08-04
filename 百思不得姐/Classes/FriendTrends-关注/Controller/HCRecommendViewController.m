@@ -80,7 +80,53 @@ static NSString * const userID = @"user";
  * 添加刷新控件
  */
 - (void)setupRefresh {
+    self.userTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewUsers)];
     self.userTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
+    self.userTableView.mj_footer.hidden = YES;
+}
+
+/**
+ * 加载用户数据
+ */
+- (void)loadNewUsers {
+    HCRecommendCategory *category = HCSelectedCategory;
+    // 设置当前页为1
+    category.currentPage = 1;
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"subscribe";
+    params[@"category_id"] = @(category.id);
+    params[@"page"] = @(category.currentPage);
+    
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        HCLog(@"success----%@", responseObject);
+       
+        NSArray *users = [HCRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        [category.users addObjectsFromArray:users];
+        
+        // 保存用户总数
+        category.total = [responseObject[@"total"] integerValue];
+        
+        HCLog(@"total = %zd", category.total);
+        
+        [self.userTableView reloadData];
+
+        // 结束刷新
+        [self.userTableView.mj_header endRefreshing];
+        
+        // 让底部控件结束刷新
+        [self checkFooterState];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        HCLog(@"failure----%@", error);
+        
+        // 结束刷新
+        [self.userTableView.mj_header endRefreshing];
+    }];
+
 }
 
 /**
@@ -96,22 +142,46 @@ static NSString * const userID = @"user";
     params[@"page"] = @(++category.currentPage);
     
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
         HCLog(@"success----%@", responseObject);
+        
+        // 字典数组 -> 模型数组
         NSArray *users = [HCRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        
+        // 给当前选中category的users数组后添加下一页user模型数据
         [category.users addObjectsFromArray:users];
+        
+        // 刷新右边的表格
         [self.userTableView reloadData];
+        
         // 让底部控件结束刷新
-        if (category.users.count == category.total) {
-            [self.userTableView.mj_footer noticeNoMoreData];
-        } else {
-            [self.userTableView.mj_footer endRefreshing];
-        }
+        [self checkFooterState];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
         HCLog(@"failure----%@", error);
+        
+        // 让底部控件结束刷新
         [self.userTableView.mj_footer endRefreshing];
     }];
 }
 
+/**
+ * 监测footer的状态
+ */
+- (void)checkFooterState {
+    // 获取当前选中的category
+    HCRecommendCategory *category = HCSelectedCategory;
+    
+    // 当users.count为0时不显示footer
+    self.userTableView.mj_footer.hidden = (category.users.count == 0);
+    
+    // 让底部控件结束刷新
+    if (category.users.count == category.total) {
+        [self.userTableView.mj_footer endRefreshingWithNoMoreData];
+    } else {
+        [self.userTableView.mj_footer endRefreshing];
+    }
+}
 
 
 #pragma mark - Table view data source
@@ -120,6 +190,8 @@ static NSString * const userID = @"user";
     if (tableView == self.categoryTableView) {
         return self.categories.count;
     } else {
+        // 由于右侧tableview的复用，每次加载新category下的user列表都要判断footer状态
+        [self checkFooterState];
         HCRecommendCategory *category = HCSelectedCategory;
         HCLog(@"users.count = %zd", category.users.count);
         return category.users.count;
@@ -152,36 +224,8 @@ static NSString * const userID = @"user";
         // 避免用户点击下一个category时，看到前一个category的用户列表
         [self.userTableView reloadData];
         
-        // 设置当前页为1
-        category.currentPage = 1;
-        
-        NSMutableDictionary *params = [NSMutableDictionary dictionary];
-        params[@"a"] = @"list";
-        params[@"c"] = @"subscribe";
-        params[@"category_id"] = @(category.id);
-        params[@"page"] = @(category.currentPage);
-        
-        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            HCLog(@"success----%@", responseObject);
-            NSArray *users = [HCRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-            [category.users addObjectsFromArray:users];
-            
-            // 保存用户总数
-            category.total = [responseObject[@"total"] integerValue];
-            
-            HCLog(@"total = %zd", category.total);
-            
-            [self.userTableView reloadData];
-            // 让底部控件结束刷新
-            if (category.users.count == category.total) {
-                [self.userTableView.mj_footer noticeNoMoreData];
-            } else {
-                [self.userTableView.mj_footer endRefreshing];
-            }
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            HCLog(@"failure----%@", error);
-        }];        
+        // 获取用户loadNewUsers
+        [self.userTableView.mj_header beginRefreshing];
     }
-    
 }
 @end
