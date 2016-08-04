@@ -21,4 +21,11 @@
 
 /** 用户模型数组 */
 @property (strong, nonatomic) NSMutableArray *users;
+
+/** 一共加载了多少个推荐用户 */
+@property (assign, nonatomic) NSInteger total;
+
+/** 当前页 */
+@property (assign, nonatomic) NSInteger currentPage;
+
 @end
