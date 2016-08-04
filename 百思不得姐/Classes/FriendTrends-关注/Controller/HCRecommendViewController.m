@@ -22,6 +22,10 @@
 @property (strong, nonatomic) NSArray *categories;
 @property (weak, nonatomic) IBOutlet UITableView *categoryTableView;
 @property (weak, nonatomic) IBOutlet UITableView *userTableView;
+/** AFHTTPSessionManager */
+@property (strong, nonatomic) AFHTTPSessionManager *manager;
+/** 请求参数 */
+@property (strong, nonatomic) NSMutableDictionary *params;
 
 @end
 
@@ -29,6 +33,13 @@
 
 static NSString * const categoryID = @"category";
 static NSString * const userID = @"user";
+
+- (AFHTTPSessionManager *)manager {
+    if (!_manager) {
+        _manager = [AFHTTPSessionManager manager];
+    }
+    return _manager;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,11 +50,19 @@ static NSString * const userID = @"user";
     // 添加刷新控件
     [self setupRefresh];
     
+    // 加载左侧的类别数据
+    [self loadCategories];
+}
+
+/**
+ * 加载左侧的类别数据
+ */
+- (void)loadCategories {
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"category";
     params[@"c"] = @"subscribe";
     
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         HCLog(@"success----%@", responseObject);
         self.categories = [HCRecommendCategory mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         [self.categoryTableView reloadData];
@@ -51,10 +70,14 @@ static NSString * const userID = @"user";
         // 默认选中首行
         [self.categoryTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
         
+        // 让用户表格进入下拉刷新状态
+        [self.userTableView.mj_header beginRefreshing];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         HCLog(@"failure----%@", error);
     }];
 }
+
 
 /**
  * 初始化tableView
@@ -98,12 +121,19 @@ static NSString * const userID = @"user";
     params[@"c"] = @"subscribe";
     params[@"category_id"] = @(category.id);
     params[@"page"] = @(category.currentPage);
+    self.params = params;
     
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         HCLog(@"success----%@", responseObject);
-       
+        
+        // 字典数组 -> 模型数组
         NSArray *users = [HCRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        
+        // 清除旧数据
+        [category.users removeAllObjects];
+        
+        // 给当前选中category的users数组添加当前页user模型数据
         [category.users addObjectsFromArray:users];
         
         // 保存用户总数
@@ -111,6 +141,10 @@ static NSString * const userID = @"user";
         
         HCLog(@"total = %zd", category.total);
         
+        // 不是最后一次请求
+        if (self.params != params) return;
+        
+        // 刷新右边的表格
         [self.userTableView reloadData];
 
         // 结束刷新
@@ -140,8 +174,9 @@ static NSString * const userID = @"user";
     params[@"c"] = @"subscribe";
     params[@"category_id"] = @([HCSelectedCategory id]);
     params[@"page"] = @(++category.currentPage);
+    self.params = params;
     
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         HCLog(@"success----%@", responseObject);
         
@@ -151,11 +186,15 @@ static NSString * const userID = @"user";
         // 给当前选中category的users数组后添加下一页user模型数据
         [category.users addObjectsFromArray:users];
         
+        // 不是最后一次请求
+        if (self.params != params) return;
+        
         // 刷新右边的表格
         [self.userTableView reloadData];
         
         // 让底部控件结束刷新
         [self checkFooterState];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         HCLog(@"failure----%@", error);
@@ -227,5 +266,9 @@ static NSString * const userID = @"user";
         // 获取用户loadNewUsers
         [self.userTableView.mj_header beginRefreshing];
     }
+}
+
+- (void)dealloc {
+    [self.manager.operationQueue cancelAllOperations];
 }
 @end
