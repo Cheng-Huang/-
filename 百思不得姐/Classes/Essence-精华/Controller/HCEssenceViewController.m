@@ -8,6 +8,7 @@
 
 #import "HCEssenceViewController.h"
 #import "HCRecommendTagViewController.h"
+#import "HCPushGuideView.h"
 
 @interface HCEssenceViewController ()
 
@@ -17,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 显示推送引导页
+    [HCPushGuideView show];
 
     // 设置导航栏题目
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];

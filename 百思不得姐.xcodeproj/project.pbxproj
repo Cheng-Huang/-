@@ -31,6 +31,8 @@
 		D25FFAFD1D505A4C00085927 /* HCRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25FFAFB1D505A4C00085927 /* HCRecommendViewController.m */; };
 		D25FFAFE1D505A4C00085927 /* HCRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25FFAFC1D505A4C00085927 /* HCRecommendViewController.xib */; };
 		D260EEEC1D5B0C69002B84BE /* HCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D260EEEB1D5B0C69002B84BE /* HCTextField.m */; };
+		D260EEF91D5B22DE002B84BE /* HCPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = D260EEF81D5B22DE002B84BE /* HCPushGuideView.m */; };
+		D260EEFB1D5B22E8002B84BE /* HCPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D260EEFA1D5B22E8002B84BE /* HCPushGuideView.xib */; };
 		D2630F551D54796E00D0C7EE /* HCRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2630F531D54796E00D0C7EE /* HCRecommendTagCell.m */; };
 		D2630F561D54796E00D0C7EE /* HCRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2630F541D54796E00D0C7EE /* HCRecommendTagCell.xib */; };
 		D2630F591D547A0E00D0C7EE /* HCRecommendTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2630F581D547A0E00D0C7EE /* HCRecommendTagViewController.m */; };
@@ -86,6 +88,9 @@
 		D25FFAFC1D505A4C00085927 /* HCRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCRecommendViewController.xib; sourceTree = "<group>"; };
 		D260EEEA1D5B0C69002B84BE /* HCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTextField.h; sourceTree = "<group>"; };
 		D260EEEB1D5B0C69002B84BE /* HCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTextField.m; sourceTree = "<group>"; };
+		D260EEF71D5B22DE002B84BE /* HCPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCPushGuideView.h; sourceTree = "<group>"; };
+		D260EEF81D5B22DE002B84BE /* HCPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCPushGuideView.m; sourceTree = "<group>"; };
+		D260EEFA1D5B22E8002B84BE /* HCPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCPushGuideView.xib; sourceTree = "<group>"; };
 		D2630F521D54796E00D0C7EE /* HCRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCRecommendTagCell.h; sourceTree = "<group>"; };
 		D2630F531D54796E00D0C7EE /* HCRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCRecommendTagCell.m; sourceTree = "<group>"; };
 		D2630F541D54796E00D0C7EE /* HCRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCRecommendTagCell.xib; sourceTree = "<group>"; };
@@ -377,6 +382,9 @@
 			children = (
 				D2174D011D4EFE36009EA3EB /* HCTabBar.h */,
 				D2174D021D4EFE36009EA3EB /* HCTabBar.m */,
+				D260EEF71D5B22DE002B84BE /* HCPushGuideView.h */,
+				D260EEF81D5B22DE002B84BE /* HCPushGuideView.m */,
+				D260EEFA1D5B22E8002B84BE /* HCPushGuideView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -443,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D260EEFB1D5B22E8002B84BE /* HCPushGuideView.xib in Resources */,
 				D26E88281D58836F00359A53 /* HCLoginRegisterViewController.xib in Resources */,
 				D24DF76F1D52165E000D1284 /* HCRecommendUserCell.xib in Resources */,
 				D25FFAFE1D505A4C00085927 /* HCRecommendViewController.xib in Resources */,
@@ -514,6 +523,7 @@
 				D2174D0A1D4EFE36009EA3EB /* HCTabBarViewController.m in Sources */,
 				D2174D181D4F8BFA009EA3EB /* HCNavigationController.m in Sources */,
 				D24DF75F1D51CC2F000D1284 /* HCRecommendCategory.m in Sources */,
+				D260EEF91D5B22DE002B84BE /* HCPushGuideView.m in Sources */,
 				D26E88261D58836100359A53 /* HCLoginRegisterViewController.m in Sources */,
 				D2174D051D4EFE36009EA3EB /* HCMeViewController.m in Sources */,
 				D24876F91D5AE44D007523B3 /* HCVerticalButton.m in Sources */,
