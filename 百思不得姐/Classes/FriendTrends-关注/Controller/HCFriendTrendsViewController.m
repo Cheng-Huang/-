@@ -8,6 +8,7 @@
 
 #import "HCFriendTrendsViewController.h"
 #import "HCRecommendViewController.h"
+#import "HCLoginRegisterViewController.h"
 
 @interface HCFriendTrendsViewController ()
 
@@ -31,6 +32,11 @@
 - (void)friendsClick {
     HCRecommendViewController *recommendVC = [[HCRecommendViewController alloc] init];
     [self.navigationController pushViewController:recommendVC animated:YES];
+}
+
+- (IBAction)loginRegisterClick:(id)sender {
+    HCLoginRegisterViewController *vc = [[HCLoginRegisterViewController alloc] init];
+    [self.navigationController presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

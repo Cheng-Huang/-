@@ -32,10 +32,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE7-1p-tZg">
-                    <rect key="frame" x="200" y="371" width="200" height="35"/>
+                    <rect key="frame" x="200" y="371" width="200" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="4e7-ef-PX3"/>
-                        <constraint firstAttribute="height" constant="35" id="EDf-De-awy"/>
+                        <constraint firstAttribute="height" constant="40" id="EDf-De-awy"/>
                     </constraints>
                     <state key="normal" title="立即登录注册" backgroundImage="friendsTrend_login">
                         <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,6 +44,9 @@
                     <state key="highlighted" backgroundImage="friendsTrend_login_click">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="loginRegisterClick:" destination="-1" eventType="touchUpInside" id="GYB-aS-Azt"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
