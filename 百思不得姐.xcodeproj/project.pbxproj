@@ -39,6 +39,11 @@
 		D2630F5C1D54841900D0C7EE /* HCRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D2630F5B1D54841900D0C7EE /* HCRecommendTag.m */; };
 		D26E88261D58836100359A53 /* HCLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E88251D58836100359A53 /* HCLoginRegisterViewController.m */; };
 		D26E88281D58836F00359A53 /* HCLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26E88271D58836F00359A53 /* HCLoginRegisterViewController.xib */; };
+		D295B8CE1D5C578000361B79 /* HCAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D295B8CD1D5C578000361B79 /* HCAllViewController.m */; };
+		D295B8D11D5C579200361B79 /* HCVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D295B8D01D5C579200361B79 /* HCVideoViewController.m */; };
+		D295B8D41D5C579D00361B79 /* HCVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D295B8D31D5C579D00361B79 /* HCVoiceViewController.m */; };
+		D295B8D71D5C57B100361B79 /* HCPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D295B8D61D5C57B100361B79 /* HCPictureViewController.m */; };
+		D295B8DA1D5C57BE00361B79 /* HCWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D295B8D91D5C57BE00361B79 /* HCWordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +106,16 @@
 		D26E88241D58836100359A53 /* HCLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCLoginRegisterViewController.h; sourceTree = "<group>"; };
 		D26E88251D58836100359A53 /* HCLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCLoginRegisterViewController.m; sourceTree = "<group>"; };
 		D26E88271D58836F00359A53 /* HCLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		D295B8CC1D5C578000361B79 /* HCAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCAllViewController.h; sourceTree = "<group>"; };
+		D295B8CD1D5C578000361B79 /* HCAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAllViewController.m; sourceTree = "<group>"; };
+		D295B8CF1D5C579200361B79 /* HCVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCVideoViewController.h; sourceTree = "<group>"; };
+		D295B8D01D5C579200361B79 /* HCVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCVideoViewController.m; sourceTree = "<group>"; };
+		D295B8D21D5C579D00361B79 /* HCVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCVoiceViewController.h; sourceTree = "<group>"; };
+		D295B8D31D5C579D00361B79 /* HCVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCVoiceViewController.m; sourceTree = "<group>"; };
+		D295B8D51D5C57B100361B79 /* HCPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCPictureViewController.h; sourceTree = "<group>"; };
+		D295B8D61D5C57B100361B79 /* HCPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCPictureViewController.m; sourceTree = "<group>"; };
+		D295B8D81D5C57BE00361B79 /* HCWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCWordViewController.h; sourceTree = "<group>"; };
+		D295B8D91D5C57BE00361B79 /* HCWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCWordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +213,16 @@
 				D2174CDE1D4EFE36009EA3EB /* HCEssenceViewController.m */,
 				D2630F571D547A0E00D0C7EE /* HCRecommendTagViewController.h */,
 				D2630F581D547A0E00D0C7EE /* HCRecommendTagViewController.m */,
+				D295B8CC1D5C578000361B79 /* HCAllViewController.h */,
+				D295B8CD1D5C578000361B79 /* HCAllViewController.m */,
+				D295B8CF1D5C579200361B79 /* HCVideoViewController.h */,
+				D295B8D01D5C579200361B79 /* HCVideoViewController.m */,
+				D295B8D21D5C579D00361B79 /* HCVoiceViewController.h */,
+				D295B8D31D5C579D00361B79 /* HCVoiceViewController.m */,
+				D295B8D51D5C57B100361B79 /* HCPictureViewController.h */,
+				D295B8D61D5C57B100361B79 /* HCPictureViewController.m */,
+				D295B8D81D5C57BE00361B79 /* HCWordViewController.h */,
+				D295B8D91D5C57BE00361B79 /* HCWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -527,6 +552,8 @@
 				D26E88261D58836100359A53 /* HCLoginRegisterViewController.m in Sources */,
 				D2174D051D4EFE36009EA3EB /* HCMeViewController.m in Sources */,
 				D24876F91D5AE44D007523B3 /* HCVerticalButton.m in Sources */,
+				D295B8D41D5C579D00361B79 /* HCVoiceViewController.m in Sources */,
+				D295B8DA1D5C57BE00361B79 /* HCWordViewController.m in Sources */,
 				D2174D031D4EFE36009EA3EB /* HCEssenceViewController.m in Sources */,
 				D2174D081D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.m in Sources */,
 				D24DF7631D51CD02000D1284 /* HCRecommendCategoryCell.m in Sources */,
@@ -536,9 +563,12 @@
 				D24DF76E1D52165E000D1284 /* HCRecommendUserCell.m in Sources */,
 				D2630F551D54796E00D0C7EE /* HCRecommendTagCell.m in Sources */,
 				D2174D091D4EFE36009EA3EB /* UIView+HCExtension.m in Sources */,
+				D295B8CE1D5C578000361B79 /* HCAllViewController.m in Sources */,
+				D295B8D11D5C579200361B79 /* HCVideoViewController.m in Sources */,
 				D2174D0B1D4EFE36009EA3EB /* main.m in Sources */,
 				D2630F5C1D54841900D0C7EE /* HCRecommendTag.m in Sources */,
 				D2174D0C1D4EFE36009EA3EB /* HCTabBar.m in Sources */,
+				D295B8D71D5C57B100361B79 /* HCPictureViewController.m in Sources */,
 				D2174D071D4EFE36009EA3EB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
