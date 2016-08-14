@@ -28,6 +28,7 @@
 		D24DF7671D521361000D1284 /* HCRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D24DF7661D521361000D1284 /* HCRecommendUser.m */; };
 		D24DF76E1D52165E000D1284 /* HCRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D24DF76C1D52165E000D1284 /* HCRecommendUserCell.m */; };
 		D24DF76F1D52165E000D1284 /* HCRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24DF76D1D52165E000D1284 /* HCRecommendUserCell.xib */; };
+		D25A581C1D5DF8E700236AD8 /* HCTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = D25A581B1D5DF8E700236AD8 /* HCTopic.m */; };
 		D25FFAFD1D505A4C00085927 /* HCRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25FFAFB1D505A4C00085927 /* HCRecommendViewController.m */; };
 		D25FFAFE1D505A4C00085927 /* HCRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25FFAFC1D505A4C00085927 /* HCRecommendViewController.xib */; };
 		D260EEEC1D5B0C69002B84BE /* HCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D260EEEB1D5B0C69002B84BE /* HCTextField.m */; };
@@ -88,6 +89,8 @@
 		D24DF76B1D52165E000D1284 /* HCRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCRecommendUserCell.h; sourceTree = "<group>"; };
 		D24DF76C1D52165E000D1284 /* HCRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCRecommendUserCell.m; sourceTree = "<group>"; };
 		D24DF76D1D52165E000D1284 /* HCRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCRecommendUserCell.xib; sourceTree = "<group>"; };
+		D25A581A1D5DF8E700236AD8 /* HCTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTopic.h; sourceTree = "<group>"; };
+		D25A581B1D5DF8E700236AD8 /* HCTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTopic.m; sourceTree = "<group>"; };
 		D25FFAFA1D505A4C00085927 /* HCRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCRecommendViewController.h; sourceTree = "<group>"; };
 		D25FFAFB1D505A4C00085927 /* HCRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCRecommendViewController.m; sourceTree = "<group>"; };
 		D25FFAFC1D505A4C00085927 /* HCRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCRecommendViewController.xib; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 			children = (
 				D2630F5A1D54841900D0C7EE /* HCRecommendTag.h */,
 				D2630F5B1D54841900D0C7EE /* HCRecommendTag.m */,
+				D25A581A1D5DF8E700236AD8 /* HCTopic.h */,
+				D25A581B1D5DF8E700236AD8 /* HCTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -566,6 +571,7 @@
 				D295B8CE1D5C578000361B79 /* HCAllViewController.m in Sources */,
 				D295B8D11D5C579200361B79 /* HCVideoViewController.m in Sources */,
 				D2174D0B1D4EFE36009EA3EB /* main.m in Sources */,
+				D25A581C1D5DF8E700236AD8 /* HCTopic.m in Sources */,
 				D2630F5C1D54841900D0C7EE /* HCRecommendTag.m in Sources */,
 				D2174D0C1D4EFE36009EA3EB /* HCTabBar.m in Sources */,
 				D295B8D71D5C57B100361B79 /* HCPictureViewController.m in Sources */,
