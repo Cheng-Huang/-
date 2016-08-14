@@ -40,6 +40,7 @@
 		D2630F5C1D54841900D0C7EE /* HCRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D2630F5B1D54841900D0C7EE /* HCRecommendTag.m */; };
 		D26E88261D58836100359A53 /* HCLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E88251D58836100359A53 /* HCLoginRegisterViewController.m */; };
 		D26E88281D58836F00359A53 /* HCLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26E88271D58836F00359A53 /* HCLoginRegisterViewController.xib */; };
+		D279E9E61D60669C008869B3 /* HCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D279E9E51D60669C008869B3 /* HCConst.m */; };
 		D295B8CE1D5C578000361B79 /* HCAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D295B8CD1D5C578000361B79 /* HCAllViewController.m */; };
 		D295B8D11D5C579200361B79 /* HCVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D295B8D01D5C579200361B79 /* HCVideoViewController.m */; };
 		D295B8D41D5C579D00361B79 /* HCVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D295B8D31D5C579D00361B79 /* HCVoiceViewController.m */; };
@@ -109,6 +110,8 @@
 		D26E88241D58836100359A53 /* HCLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCLoginRegisterViewController.h; sourceTree = "<group>"; };
 		D26E88251D58836100359A53 /* HCLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCLoginRegisterViewController.m; sourceTree = "<group>"; };
 		D26E88271D58836F00359A53 /* HCLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		D279E9E41D60669C008869B3 /* HCConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCConst.h; sourceTree = "<group>"; };
+		D279E9E51D60669C008869B3 /* HCConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCConst.m; sourceTree = "<group>"; };
 		D295B8CC1D5C578000361B79 /* HCAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCAllViewController.h; sourceTree = "<group>"; };
 		D295B8CD1D5C578000361B79 /* HCAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAllViewController.m; sourceTree = "<group>"; };
 		D295B8CF1D5C579200361B79 /* HCVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCVideoViewController.h; sourceTree = "<group>"; };
@@ -380,6 +383,8 @@
 				D2174CF41D4EFE36009EA3EB /* AppDelegate.h */,
 				D2174CF51D4EFE36009EA3EB /* AppDelegate.m */,
 				D2174CFE1D4EFE36009EA3EB /* main.m */,
+				D279E9E41D60669C008869B3 /* HCConst.h */,
+				D279E9E51D60669C008869B3 /* HCConst.m */,
 				D2174CFF1D4EFE36009EA3EB /* PrefixHeader.pch */,
 			);
 			path = "Other-其他";
@@ -454,7 +459,7 @@
 				TargetAttributes = {
 					D2174CA61D4E0F00009EA3EB = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = MSGU6L433A;
+						DevelopmentTeam = 2W2W3W7F27;
 					};
 				};
 			};
@@ -563,6 +568,7 @@
 				D2174D081D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.m in Sources */,
 				D24DF7631D51CD02000D1284 /* HCRecommendCategoryCell.m in Sources */,
 				D260EEEC1D5B0C69002B84BE /* HCTextField.m in Sources */,
+				D279E9E61D60669C008869B3 /* HCConst.m in Sources */,
 				D2174D041D4EFE36009EA3EB /* HCFriendTrendsViewController.m in Sources */,
 				D25FFAFD1D505A4C00085927 /* HCRecommendViewController.m in Sources */,
 				D24DF76E1D52165E000D1284 /* HCRecommendUserCell.m in Sources */,
@@ -670,14 +676,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4616DD69AE0071412E300618 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.ecnu.huangcheng.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -685,14 +697,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CB520623F7789528BC24339 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.ecnu.huangcheng.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

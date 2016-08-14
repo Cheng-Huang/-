@@ -96,7 +96,7 @@
 - (void)setupTitleView {
     // 添加标题栏
     self.titleView = [[UIView alloc] init];
-    self.titleView.frame = CGRectMake(0, 64, self.view.width, 40);
+    self.titleView.frame = CGRectMake(0, HCTitleViewY, self.view.width, HCTitleViewH);
     self.titleView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.8];
     [self.view addSubview:self.titleView];
     // 添加标题栏中的标题
@@ -174,14 +174,6 @@
     contentVC.view.x = scrollView.contentOffset.x;
     contentVC.view.y = 0;
     contentVC.view.height = scrollView.height;
-    
-    // 设置内边距
-    CGFloat topInset = CGRectGetMaxY(self.titleView.frame);
-    CGFloat bottomInset = self.tabBarController.tabBar.height;
-    [contentVC.tableView setContentInset:UIEdgeInsetsMake(topInset, 0, bottomInset, 0)];
-    
-    // 设置滚动条的内边距
-    contentVC.tableView.scrollIndicatorInsets = contentVC.tableView.contentInset;
     
     [scrollView addSubview:contentVC.view];
     

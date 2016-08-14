@@ -24,7 +24,7 @@
 }
 
 - (IBAction)showLoginOrRegister:(UIButton *)sender {
-    
+    [self.view endEditing:YES];
     if (self.loginViewMarginLeft.constant == 0) {
         self.loginViewMarginLeft.constant = - self.view.width;
         sender.selected = YES;
