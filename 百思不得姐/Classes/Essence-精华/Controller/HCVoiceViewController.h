@@ -6,8 +6,8 @@
 //  Copyright © 2016年 成 黄. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HCTopicViewController.h"
 
-@interface HCVoiceViewController : UITableViewController
+@interface HCVoiceViewController : HCTopicViewController
 
 @end

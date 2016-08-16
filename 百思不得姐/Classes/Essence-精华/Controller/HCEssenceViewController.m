@@ -54,14 +54,19 @@
  */
 - (void)setupChildViewControllers {
     HCAllViewController *allVC = [[HCAllViewController alloc] init];
+    allVC.title = @"全部";
     [self addChildViewController:allVC];
     HCVideoViewController *videoVC = [[HCVideoViewController alloc] init];
+    videoVC.title = @"视频";
     [self addChildViewController:videoVC];
     HCVoiceViewController *voiceVC = [[HCVoiceViewController alloc] init];
+    voiceVC.title = @"声音";
     [self addChildViewController:voiceVC];
     HCPictureViewController *pictureVC = [[HCPictureViewController alloc] init];
+    pictureVC.title = @"图片";
     [self addChildViewController:pictureVC];
     HCWordViewController *wordVC = [[HCWordViewController alloc] init];
+    wordVC.title = @"段子";
     [self addChildViewController:wordVC];
 }
 
@@ -99,15 +104,15 @@
     self.titleView.frame = CGRectMake(0, HCTitleViewY, self.view.width, HCTitleViewH);
     self.titleView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.8];
     [self.view addSubview:self.titleView];
-    // 添加标题栏中的标题
-    NSArray *titles = @[@"全部", @"视频", @"声音", @"图片", @"段子"];
+    
+    
     CGFloat index = 0;
-    CGFloat titleBtnW = self.titleView.width / titles.count;
+    CGFloat titleBtnW = self.titleView.width / self.childViewControllers.count;
     CGFloat titleBtnH = self.titleView.height;
-    for (NSString *title in titles) {
+    for (UIViewController *VC in self.childViewControllers) {
         UIButton *titleBtn = [[UIButton alloc] init];
         titleBtn.frame = CGRectMake(index * titleBtnW, 0, titleBtnW, titleBtnH);
-        [titleBtn setTitle:title forState:UIControlStateNormal];
+        [titleBtn setTitle:VC.title forState:UIControlStateNormal];
         [titleBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         titleBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         titleBtn.tag = index;

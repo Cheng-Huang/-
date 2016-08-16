@@ -49,6 +49,7 @@
 		D295B8D71D5C57B100361B79 /* HCPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D295B8D61D5C57B100361B79 /* HCPictureViewController.m */; };
 		D295B8DA1D5C57BE00361B79 /* HCWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D295B8D91D5C57BE00361B79 /* HCWordViewController.m */; };
 		D2BEC68D1D6209DF001A5275 /* NSDate+HCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BEC68C1D6209DF001A5275 /* NSDate+HCExtension.m */; };
+		D2FE96F31D635A47002BFCE9 /* HCTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE96F21D635A47002BFCE9 /* HCTopicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,8 @@
 		D295B8D91D5C57BE00361B79 /* HCWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCWordViewController.m; sourceTree = "<group>"; };
 		D2BEC68B1D6209DF001A5275 /* NSDate+HCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HCExtension.h"; sourceTree = "<group>"; };
 		D2BEC68C1D6209DF001A5275 /* NSDate+HCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HCExtension.m"; sourceTree = "<group>"; };
+		D2FE96F11D635A47002BFCE9 /* HCTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTopicViewController.h; sourceTree = "<group>"; };
+		D2FE96F21D635A47002BFCE9 /* HCTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTopicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +240,8 @@
 				D295B8D61D5C57B100361B79 /* HCPictureViewController.m */,
 				D295B8D81D5C57BE00361B79 /* HCWordViewController.h */,
 				D295B8D91D5C57BE00361B79 /* HCWordViewController.m */,
+				D2FE96F11D635A47002BFCE9 /* HCTopicViewController.h */,
+				D2FE96F21D635A47002BFCE9 /* HCTopicViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -574,6 +579,7 @@
 				D2174D181D4F8BFA009EA3EB /* HCNavigationController.m in Sources */,
 				D24DF75F1D51CC2F000D1284 /* HCRecommendCategory.m in Sources */,
 				D260EEF91D5B22DE002B84BE /* HCPushGuideView.m in Sources */,
+				D2FE96F31D635A47002BFCE9 /* HCTopicViewController.m in Sources */,
 				D26E88261D58836100359A53 /* HCLoginRegisterViewController.m in Sources */,
 				D2174D051D4EFE36009EA3EB /* HCMeViewController.m in Sources */,
 				D24876F91D5AE44D007523B3 /* HCVerticalButton.m in Sources */,
