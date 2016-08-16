@@ -26,9 +26,6 @@
 @end
 
 @implementation HCTopicViewController
-- (NSString *)type {
-    return nil;
-}
 
 static NSString * const HCTopicCellID = @"topic";
 
@@ -93,7 +90,7 @@ static NSString * const HCTopicCellID = @"topic";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"]= @"list";
     params[@"c"]= @"data";
-    params[@"type"]= self.type;
+    params[@"type"]= @(self.type);
     self.params = params;
     
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -129,7 +126,7 @@ static NSString * const HCTopicCellID = @"topic";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"]= @"list";
     params[@"c"]= @"data";
-    params[@"type"]= self.type;
+    params[@"type"]= @(self.type);
     params[@"maxtime"]= self.maxtime;
     NSInteger page = self.page + 1;
     params[@"page"] = @(page);

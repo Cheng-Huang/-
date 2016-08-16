@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    HCTopicTypeAll = 1,
+    HCTopicTypePicture = 10,
+    HCTopicTypeWord = 29,
+    HCTopicTypeVoice = 31,
+    HCTopicTypeVideo = 41
+} HCTopicType;
+
 @interface HCTopicViewController : UITableViewController
-/** 帖子类型(交给子类去实现) */
-- (NSString *)type;
+/** 帖子类型(初始化时赋值) */
+@property (assign, nonatomic) HCTopicType type;
 @end

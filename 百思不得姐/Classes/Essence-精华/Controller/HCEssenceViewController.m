@@ -53,20 +53,29 @@
  * 初始化子控制器
  */
 - (void)setupChildViewControllers {
-    HCAllViewController *allVC = [[HCAllViewController alloc] init];
+    HCTopicViewController *allVC = [[HCTopicViewController alloc] init];
     allVC.title = @"全部";
+    allVC.type = HCTopicTypeAll;
     [self addChildViewController:allVC];
-    HCVideoViewController *videoVC = [[HCVideoViewController alloc] init];
+    
+    HCTopicViewController *videoVC = [[HCTopicViewController alloc] init];
     videoVC.title = @"视频";
+    videoVC.type = HCTopicTypeVideo;
     [self addChildViewController:videoVC];
-    HCVoiceViewController *voiceVC = [[HCVoiceViewController alloc] init];
+    
+    HCTopicViewController *voiceVC = [[HCTopicViewController alloc] init];
     voiceVC.title = @"声音";
+    voiceVC.type = HCTopicTypeVoice;
     [self addChildViewController:voiceVC];
-    HCPictureViewController *pictureVC = [[HCPictureViewController alloc] init];
+    
+    HCTopicViewController *pictureVC = [[HCTopicViewController alloc] init];
     pictureVC.title = @"图片";
+    pictureVC.type = HCTopicTypePicture;
     [self addChildViewController:pictureVC];
-    HCWordViewController *wordVC = [[HCWordViewController alloc] init];
+    
+    HCTopicViewController *wordVC = [[HCTopicViewController alloc] init];
     wordVC.title = @"段子";
+    wordVC.type = HCTopicTypeWord;
     [self addChildViewController:wordVC];
 }
 
