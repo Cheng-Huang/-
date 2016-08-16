@@ -11,6 +11,7 @@
 
 #import "UIView+HCExtension.h"
 #import "UIBarButtonItem+HCExtension.h"
+#import "NSDate+HCExtension.h"
 #import "HCConst.h"
 
 #ifdef DEBUG
