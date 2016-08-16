@@ -41,16 +41,6 @@
     [self setButtonTitle:self.caiButton count:topic.cai placeholder:@"踩"];
     [self setButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
     [self setButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
-    
-    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
-    
-    fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-    
-    NSDate *now = [NSDate date];
-    
-    NSDate *create = [fmt dateFromString:topic.create_time];
-    
-    HCLog(@"%@", [now deltaFrom:create]);
 
 }
 

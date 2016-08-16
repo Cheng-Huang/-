@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="341" height="232"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uux-IG-2gV" id="IGx-go-o6O">
-                <rect key="frame" x="0.0" y="0.0" width="341" height="231.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="341" height="232"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultUserIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6jZ-58-TvB">
@@ -45,7 +45,7 @@
                         <rect key="frame" x="0.0" y="188" width="341" height="44"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwn-uP-9Ky">
-                                <rect key="frame" x="0.0" y="12" width="84.5" height="20"/>
+                                <rect key="frame" x="0.0" y="12" width="85" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="545" image="mainCellDing">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,10 +53,10 @@
                                 <state key="highlighted" image="mainCellDingClick"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="be4-O2-aKN">
-                                <rect key="frame" x="84.5" y="7.5" width="1" height="29"/>
+                                <rect key="frame" x="85" y="8" width="1" height="29"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQI-ap-Jv0">
-                                <rect key="frame" x="85.5" y="12" width="84.5" height="20"/>
+                                <rect key="frame" x="86" y="12" width="84" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="545" image="mainCellCai">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,10 +64,10 @@
                                 <state key="highlighted" image="mainCellCaiClick"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="Z1y-Kc-cFv">
-                                <rect key="frame" x="170" y="7.5" width="1" height="29"/>
+                                <rect key="frame" x="170" y="8" width="1" height="29"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh6-mf-3uP">
-                                <rect key="frame" x="171" y="12" width="84.5" height="20"/>
+                                <rect key="frame" x="171" y="12" width="85" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="545" image="mainCellShare">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,10 +75,10 @@
                                 <state key="highlighted" image="mainCellShareClick"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="DIW-rR-Uf7">
-                                <rect key="frame" x="255.5" y="7.5" width="1" height="29"/>
+                                <rect key="frame" x="256" y="8" width="1" height="29"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxg-v9-D2v">
-                                <rect key="frame" x="256.5" y="12" width="84.5" height="20"/>
+                                <rect key="frame" x="257" y="12" width="84" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="545" image="mainCellComment">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
