@@ -25,4 +25,6 @@
 @property (nonatomic, assign) NSInteger repost;
 /** 评论的数量 */
 @property (nonatomic, assign) NSInteger comment;
+/** 新浪大V */
+@property (assign, nonatomic, getter=isSina_v) BOOL sina_v;
 @end

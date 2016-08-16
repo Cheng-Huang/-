@@ -13,6 +13,7 @@
 @interface HCTopicCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *sinaVView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *createTimeLabel;
 @property (weak, nonatomic) IBOutlet UIButton *dingButton;
@@ -34,6 +35,7 @@
     _topic = topic;
     // 设置cell顶部控件
     [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    self.sinaVView.hidden = !topic.isSina_v;
     self.nameLabel.text = topic.name;
     self.createTimeLabel.text = topic.create_time;
     // 设置cell底部控件
