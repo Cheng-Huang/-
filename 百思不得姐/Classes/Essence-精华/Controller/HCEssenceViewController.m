@@ -8,11 +8,7 @@
 
 #import "HCEssenceViewController.h"
 #import "HCRecommendTagViewController.h"
-#import "HCAllViewController.h"
-#import "HCVideoViewController.h"
-#import "HCVoiceViewController.h"
-#import "HCPictureViewController.h"
-#import "HCWordViewController.h"
+#import "HCTopicViewController.h"
 
 @interface HCEssenceViewController () <UIScrollViewDelegate>
 /** 标题红色指示器 */
