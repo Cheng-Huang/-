@@ -180,7 +180,12 @@ static NSString * const HCTopicCellID = @"topic";
 #pragma mark - Table view delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 200;
+    HCTopic *topic = self.topics[indexPath.row];
+    return topic.cellHeight;
 }
+
+//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return 200;
+//}
 
 @end

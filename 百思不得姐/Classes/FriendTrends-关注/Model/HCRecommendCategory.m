@@ -16,4 +16,11 @@
     }
     return _users;
 }
+
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    return @{
+            @"ID" : @"id"
+            };
+}
+
 @end

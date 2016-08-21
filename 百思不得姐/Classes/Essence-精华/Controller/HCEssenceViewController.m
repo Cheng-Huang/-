@@ -49,6 +49,10 @@
  * 初始化子控制器
  */
 - (void)setupChildViewControllers {
+    HCTopicViewController *pictureVC = [[HCTopicViewController alloc] init];
+    pictureVC.title = @"图片";
+    pictureVC.type = HCTopicTypePicture;
+    [self addChildViewController:pictureVC];
     HCTopicViewController *allVC = [[HCTopicViewController alloc] init];
     allVC.title = @"全部";
     allVC.type = HCTopicTypeAll;
@@ -64,10 +68,6 @@
     voiceVC.type = HCTopicTypeVoice;
     [self addChildViewController:voiceVC];
     
-    HCTopicViewController *pictureVC = [[HCTopicViewController alloc] init];
-    pictureVC.title = @"图片";
-    pictureVC.type = HCTopicTypePicture;
-    [self addChildViewController:pictureVC];
     
     HCTopicViewController *wordVC = [[HCTopicViewController alloc] init];
     wordVC.title = @"段子";

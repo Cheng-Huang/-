@@ -9,6 +9,19 @@
 #import "HCTopic.h"
 
 @implementation HCTopic
+{
+    CGFloat _cellHeight;
+    CGRect _pictureF;
+}
+
++ (NSDictionary *)replacedKeyFromPropertyName
+{
+    return @{
+             @"small_image" : @"image0",
+             @"large_image" : @"image1",
+             @"middle_image" : @"image2"
+             };
+}
 
 - (NSString *)create_time {
     // 调试 —— 自定义帖子创建时间
@@ -17,7 +30,6 @@
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
     fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
     NSDate *createTime = [fmt dateFromString:_create_time];
-    
     
     // 帖子时间｜现在时间
 //    HCLog(@"%@----%@", createTime, [NSDate date]);
@@ -65,6 +77,41 @@
     } else { // 非今年
         return _create_time;
     }
+}
+
+- (CGFloat)cellHeight {
+    // 设置label每一行文字的最大宽度
+    // 为了保证计算出来的数值 跟 真正显示出来的效果 一致
+//    self.contentLabel.preferredMaxLayoutWidth = [UIScreen mainScreen].bounds.size.width - 4 * margin;
+    
+    // 文字的最大尺寸
+    CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 4 * HCTopicCellMargin, MAXFLOAT);
+    // 计算文字的高度
+    CGFloat textH = [self.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:17]} context:nil].size.height;
+    
+    _cellHeight = HCTopicCellTextY + textH + HCTopicCellMargin;
+    
+    // 计算cell的高度
+    if (self.type == HCTopicTypePicture) {
+        // 图片显示出来的宽度
+        CGFloat pictureW = maxSize.width;
+        // 显示显示出来的高度
+        CGFloat pictureH = pictureW * self.height / self.width;
+        if (pictureH >= HCTopicCellPictureMaxH) { // 图片高度过长
+            pictureH = HCTopicCellPictureBreakH;
+            self.bigPicture = YES; // 大图
+        }
+        // 计算图片控件的frame
+        CGFloat pictureX = HCTopicCellMargin;
+        CGFloat pictureY = HCTopicCellTextY + textH + HCTopicCellMargin;
+        _pictureF = CGRectMake(pictureX, pictureY, pictureW, pictureH);
+        _cellHeight += pictureH + HCTopicCellMargin;
+    } else if (self.type == HCTopicTypeVoice) {
+
+    }
+    // 底部工具条的高度
+    _cellHeight += HCTopicCellBottomBarH + HCTopicCellMargin;
+    return _cellHeight;
 }
 
 @end

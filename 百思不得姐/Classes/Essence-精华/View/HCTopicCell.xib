@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -60,10 +60,10 @@
                                 <state key="highlighted" image="mainCellDingClick"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="be4-O2-aKN">
-                                <rect key="frame" x="85" y="8" width="1" height="29"/>
+                                <rect key="frame" x="84" y="7" width="1" height="29"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQI-ap-Jv0">
-                                <rect key="frame" x="86" y="12" width="84" height="20"/>
+                                <rect key="frame" x="85" y="12" width="85" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="545" image="mainCellCai">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,7 +71,7 @@
                                 <state key="highlighted" image="mainCellCaiClick"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="Z1y-Kc-cFv">
-                                <rect key="frame" x="170" y="8" width="1" height="29"/>
+                                <rect key="frame" x="170" y="7" width="1" height="29"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh6-mf-3uP">
                                 <rect key="frame" x="171" y="12" width="85" height="20"/>
@@ -82,10 +82,10 @@
                                 <state key="highlighted" image="mainCellShareClick"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="DIW-rR-Uf7">
-                                <rect key="frame" x="256" y="8" width="1" height="29"/>
+                                <rect key="frame" x="255" y="7" width="1" height="29"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxg-v9-D2v">
-                                <rect key="frame" x="257" y="12" width="84" height="20"/>
+                                <rect key="frame" x="256" y="12" width="85" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="545" image="mainCellComment">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,6 +107,12 @@
                             <constraint firstAttribute="height" constant="1" id="WqA-oo-o4g"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZC-mc-wvN">
+                        <rect key="frame" x="10" y="55" width="321" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="PwV-Xy-QT9" firstAttribute="leading" secondItem="6jZ-58-TvB" secondAttribute="trailing" constant="8" id="4Hd-08-dl3"/>
@@ -122,6 +128,7 @@
                     <constraint firstItem="d3g-8G-vJe" firstAttribute="top" secondItem="PwV-Xy-QT9" secondAttribute="top" id="ZwH-Bm-jVi"/>
                     <constraint firstItem="5tf-tA-dw4" firstAttribute="leading" secondItem="PwV-Xy-QT9" secondAttribute="leading" id="aeU-Lw-PgA"/>
                     <constraint firstAttribute="trailing" secondItem="7PO-Hn-622" secondAttribute="trailing" id="bJT-Ks-uka"/>
+                    <constraint firstItem="nZC-mc-wvN" firstAttribute="top" secondItem="6jZ-58-TvB" secondAttribute="bottom" constant="10" id="d1I-Bc-O6p"/>
                     <constraint firstItem="6jZ-58-TvB" firstAttribute="leading" secondItem="IGx-go-o6O" secondAttribute="leading" constant="10" id="eAN-By-5dw"/>
                     <constraint firstAttribute="bottom" secondItem="GqQ-vo-fbK" secondAttribute="bottom" id="fnw-IE-8AL"/>
                     <constraint firstAttribute="trailing" secondItem="d3g-8G-vJe" secondAttribute="trailing" constant="10" id="fyG-rr-mXV"/>
@@ -129,11 +136,15 @@
                 </constraints>
             </tableViewCellContentView>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="nZC-mc-wvN" secondAttribute="trailing" constant="10" id="HDS-C5-iNr"/>
                 <constraint firstItem="GqQ-vo-fbK" firstAttribute="leading" secondItem="Uux-IG-2gV" secondAttribute="leading" id="dcu-jP-xN6"/>
+                <constraint firstItem="nZC-mc-wvN" firstAttribute="leading" secondItem="Uux-IG-2gV" secondAttribute="leading" constant="10" id="rjl-yq-QAm"/>
             </constraints>
             <connections>
+                <outlet property="bottomStackView" destination="GqQ-vo-fbK" id="vK3-82-lWK"/>
                 <outlet property="caiButton" destination="OQI-ap-Jv0" id="s87-og-xNU"/>
                 <outlet property="commentButton" destination="Zxg-v9-D2v" id="sPL-gn-p1R"/>
+                <outlet property="contentLabel" destination="nZC-mc-wvN" id="r03-Ak-qg0"/>
                 <outlet property="createTimeLabel" destination="5tf-tA-dw4" id="Eyp-Fc-5rL"/>
                 <outlet property="dingButton" destination="zwn-uP-9Ky" id="hUm-rm-D1h"/>
                 <outlet property="nameLabel" destination="PwV-Xy-QT9" id="VH5-Kd-t7j"/>

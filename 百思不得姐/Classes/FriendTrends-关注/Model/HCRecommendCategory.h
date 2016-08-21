@@ -11,7 +11,7 @@
 @interface HCRecommendCategory : NSObject
 
 /** 标签id */
-@property (assign, nonatomic) NSInteger id;
+@property (assign, nonatomic) NSInteger ID;
 
 /** 标签名称 */
 @property (copy, nonatomic) NSString *name;
