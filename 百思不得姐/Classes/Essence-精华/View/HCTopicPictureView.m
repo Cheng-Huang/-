@@ -40,10 +40,16 @@
 
 - (void)setTopic:(HCTopic *)topic {
     _topic = topic;
+    
+    // 立马显示最新的进度值(防止因为网速慢, 导致显示的是其他图片的下载进度)
+    [self.progressView setProgress:self.topic.pictureProgress animated:NO];
+    
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:topic.large_image] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
         self.progressView.hidden = NO;
-        CGFloat progress = 1.0 * receivedSize / expectedSize;
-        [self.progressView setProgress:progress animated:NO];
+        // 计算进度值
+        self.topic.pictureProgress = 1.0 * receivedSize / expectedSize;
+        // 显示进度值
+        [self.progressView setProgress:self.topic.pictureProgress animated:NO];
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         self.progressView.hidden = YES;
     }];

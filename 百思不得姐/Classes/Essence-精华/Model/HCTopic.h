@@ -46,4 +46,6 @@
 @property (nonatomic, assign, readonly) CGRect pictureF;
 /** 图片是否太大 */
 @property (nonatomic, assign, getter=isBigPicture) BOOL bigPicture;
+/** 图片下载进度 */
+@property (assign, nonatomic) CGFloat pictureProgress;
 @end

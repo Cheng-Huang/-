@@ -10,10 +10,12 @@
 #import "HCTopic.h"
 #import <UIImageView+WebCache.h>
 #import <SVProgressHUD.h>
+#import "HCProgressView.h"
 
 @interface HCShowPictureViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet HCProgressView *progressView;
 @end
 
 @implementation HCShowPictureViewController
@@ -43,7 +45,16 @@
          imageView.centerY = screenH * 0.5;
      }
     
-    [imageView sd_setImageWithURL:[NSURL URLWithString:self.topic.large_image]];
+    // 马上显示当前图片的下载进度
+    [self.progressView setProgress:self.topic.pictureProgress animated:YES];
+    
+    // 下载图片
+    [imageView sd_setImageWithURL:[NSURL URLWithString:self.topic.large_image] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        self.progressView.hidden = NO;
+        [self.progressView setProgress:(1.0 * receivedSize / expectedSize) animated:NO];
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        self.progressView.hidden = YES;
+    }];
 }
 
 - (IBAction)backBtnClicked {
@@ -51,6 +62,10 @@
 }
 
 - (IBAction)saveBtnClicked {
+    if (self.imageView.image == nil) {
+        [SVProgressHUD showErrorWithStatus:@"图片并没下载完毕!"];
+        return;
+    }
     UIImageWriteToSavedPhotosAlbum(self.imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 }
 
