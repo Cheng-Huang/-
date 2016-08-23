@@ -17,9 +17,6 @@
                         <constraint firstAttribute="height" constant="25" id="y1Z-eF-eDh"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="chn-cW-FW5">
-                    <rect key="frame" x="0.0" y="0.0" width="457" height="268"/>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXm-Bc-NHE" customClass="HCProgressView">
                     <rect key="frame" x="178" y="84" width="100" height="100"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -28,6 +25,9 @@
                         <constraint firstAttribute="height" constant="100" id="i2c-IF-bRt"/>
                     </constraints>
                 </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="chn-cW-FW5">
+                    <rect key="frame" x="0.0" y="0.0" width="457" height="268"/>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="09K-Qu-gq5">
                     <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
                     <constraints>

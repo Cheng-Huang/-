@@ -45,9 +45,13 @@
     [self.progressView setProgress:self.topic.pictureProgress animated:NO];
     
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:topic.large_image] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        if (![self.topic.large_image isEqualToString:topic.large_image]) {
+            return;
+        }
         self.progressView.hidden = NO;
         // 计算进度值
         self.topic.pictureProgress = 1.0 * receivedSize / expectedSize;
+//        HCLog(@"%@--%@--%@--%zd / %zd--%.1f%%", self.topic.name, self.topic.large_image.lastPathComponent, topic.large_image.lastPathComponent, receivedSize, expectedSize, (self.topic.pictureProgress * 100));
         // 显示进度值
         [self.progressView setProgress:self.topic.pictureProgress animated:NO];
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {

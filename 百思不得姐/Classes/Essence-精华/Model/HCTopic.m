@@ -85,7 +85,7 @@
 //    self.contentLabel.preferredMaxLayoutWidth = [UIScreen mainScreen].bounds.size.width - 4 * margin;
     
     // 文字的最大尺寸
-    CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 4 * HCTopicCellMargin, MAXFLOAT);
+    CGSize maxSize = CGSizeMake(HCScreenW - 4 * HCTopicCellMargin, MAXFLOAT);
     // 计算文字的高度
     CGFloat textH = [self.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:17]} context:nil].size.height;
     

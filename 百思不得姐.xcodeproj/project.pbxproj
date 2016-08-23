@@ -46,6 +46,8 @@
 		D27A05601D65AD0C00B8F16B /* HCTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = D27A055F1D65AD0C00B8F16B /* HCTopicPictureView.m */; };
 		D27A05621D65AD3700B8F16B /* HCTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27A05611D65AD3700B8F16B /* HCTopicPictureView.xib */; };
 		D28D05EE1D6C1DBF00C91ECE /* HCProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D28D05ED1D6C1DBF00C91ECE /* HCProgressView.m */; };
+		D28D05F21D6C44A600C91ECE /* HCPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D28D05F01D6C44A600C91ECE /* HCPublishViewController.m */; };
+		D28D05F31D6C44A600C91ECE /* HCPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D28D05F11D6C44A600C91ECE /* HCPublishViewController.xib */; };
 		D29207E51D6ACC8700D57FDF /* HCShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29207E31D6ACC8700D57FDF /* HCShowPictureViewController.m */; };
 		D29207E61D6ACC8700D57FDF /* HCShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29207E41D6ACC8700D57FDF /* HCShowPictureViewController.xib */; };
 		D2BEC68D1D6209DF001A5275 /* NSDate+HCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BEC68C1D6209DF001A5275 /* NSDate+HCExtension.m */; };
@@ -124,6 +126,9 @@
 		D27A05611D65AD3700B8F16B /* HCTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCTopicPictureView.xib; sourceTree = "<group>"; };
 		D28D05EC1D6C1DBF00C91ECE /* HCProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCProgressView.h; sourceTree = "<group>"; };
 		D28D05ED1D6C1DBF00C91ECE /* HCProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCProgressView.m; sourceTree = "<group>"; };
+		D28D05EF1D6C44A600C91ECE /* HCPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCPublishViewController.h; sourceTree = "<group>"; };
+		D28D05F01D6C44A600C91ECE /* HCPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCPublishViewController.m; sourceTree = "<group>"; };
+		D28D05F11D6C44A600C91ECE /* HCPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCPublishViewController.xib; sourceTree = "<group>"; };
 		D29207E21D6ACC8700D57FDF /* HCShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCShowPictureViewController.h; sourceTree = "<group>"; };
 		D29207E31D6ACC8700D57FDF /* HCShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCShowPictureViewController.m; sourceTree = "<group>"; };
 		D29207E41D6ACC8700D57FDF /* HCShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCShowPictureViewController.xib; sourceTree = "<group>"; };
@@ -422,6 +427,9 @@
 				D2174D171D4F8BFA009EA3EB /* HCNavigationController.m */,
 				D2174CFC1D4EFE36009EA3EB /* HCTabBarViewController.h */,
 				D2174CFD1D4EFE36009EA3EB /* HCTabBarViewController.m */,
+				D28D05EF1D6C44A600C91ECE /* HCPublishViewController.h */,
+				D28D05F01D6C44A600C91ECE /* HCPublishViewController.m */,
+				D28D05F11D6C44A600C91ECE /* HCPublishViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -509,6 +517,7 @@
 				D27A05621D65AD3700B8F16B /* HCTopicPictureView.xib in Resources */,
 				D29207E61D6ACC8700D57FDF /* HCShowPictureViewController.xib in Resources */,
 				D2174CB71D4E0F00009EA3EB /* Assets.xcassets in Resources */,
+				D28D05F31D6C44A600C91ECE /* HCPublishViewController.xib in Resources */,
 				D24DF7641D51CD02000D1284 /* HCRecommendCategoryCell.xib in Resources */,
 				D279E9EB1D606B3A008869B3 /* HCTopicCell.xib in Resources */,
 			);
@@ -590,6 +599,7 @@
 				D260EEEC1D5B0C69002B84BE /* HCTextField.m in Sources */,
 				D28D05EE1D6C1DBF00C91ECE /* HCProgressView.m in Sources */,
 				D279E9E61D60669C008869B3 /* HCConst.m in Sources */,
+				D28D05F21D6C44A600C91ECE /* HCPublishViewController.m in Sources */,
 				D2174D041D4EFE36009EA3EB /* HCFriendTrendsViewController.m in Sources */,
 				D25FFAFD1D505A4C00085927 /* HCRecommendViewController.m in Sources */,
 				D24DF76E1D52165E000D1284 /* HCRecommendUserCell.m in Sources */,
