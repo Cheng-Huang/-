@@ -18,7 +18,8 @@
 
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated {
     [super setProgress:progress animated:animated];
-    self.progressLabel.text = [NSString stringWithFormat:@"%.0f%%", progress * 100];
+    NSString *text = [NSString stringWithFormat:@"%.0f%%", progress * 100];
+    self.progressLabel.text = [text stringByReplacingOccurrencesOfString:@"-" withString:@""];
 }
 
 @end

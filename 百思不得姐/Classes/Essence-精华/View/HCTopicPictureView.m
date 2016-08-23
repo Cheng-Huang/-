@@ -34,6 +34,7 @@
 
 - (void)showPicture {
     HCShowPictureViewController *pictureView = [[HCShowPictureViewController alloc] init];
+    pictureView.topic = self.topic;
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:pictureView animated:YES completion:nil];
 }
 

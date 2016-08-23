@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class HCTopic;
 
 @interface HCShowPictureViewController : UIViewController
+/** 帖子 */
+@property (strong, nonatomic) HCTopic *topic;
 
 @end
