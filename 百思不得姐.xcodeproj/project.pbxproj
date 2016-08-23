@@ -45,6 +45,9 @@
 		D279E9EB1D606B3A008869B3 /* HCTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D279E9EA1D606B3A008869B3 /* HCTopicCell.xib */; };
 		D27A05601D65AD0C00B8F16B /* HCTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = D27A055F1D65AD0C00B8F16B /* HCTopicPictureView.m */; };
 		D27A05621D65AD3700B8F16B /* HCTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27A05611D65AD3700B8F16B /* HCTopicPictureView.xib */; };
+		D28D05EE1D6C1DBF00C91ECE /* HCProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D28D05ED1D6C1DBF00C91ECE /* HCProgressView.m */; };
+		D29207E51D6ACC8700D57FDF /* HCShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29207E31D6ACC8700D57FDF /* HCShowPictureViewController.m */; };
+		D29207E61D6ACC8700D57FDF /* HCShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29207E41D6ACC8700D57FDF /* HCShowPictureViewController.xib */; };
 		D2BEC68D1D6209DF001A5275 /* NSDate+HCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BEC68C1D6209DF001A5275 /* NSDate+HCExtension.m */; };
 		D2FE96F31D635A47002BFCE9 /* HCTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE96F21D635A47002BFCE9 /* HCTopicViewController.m */; };
 /* End PBXBuildFile section */
@@ -119,6 +122,11 @@
 		D27A055E1D65AD0C00B8F16B /* HCTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTopicPictureView.h; sourceTree = "<group>"; };
 		D27A055F1D65AD0C00B8F16B /* HCTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTopicPictureView.m; sourceTree = "<group>"; };
 		D27A05611D65AD3700B8F16B /* HCTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCTopicPictureView.xib; sourceTree = "<group>"; };
+		D28D05EC1D6C1DBF00C91ECE /* HCProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCProgressView.h; sourceTree = "<group>"; };
+		D28D05ED1D6C1DBF00C91ECE /* HCProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCProgressView.m; sourceTree = "<group>"; };
+		D29207E21D6ACC8700D57FDF /* HCShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCShowPictureViewController.h; sourceTree = "<group>"; };
+		D29207E31D6ACC8700D57FDF /* HCShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCShowPictureViewController.m; sourceTree = "<group>"; };
+		D29207E41D6ACC8700D57FDF /* HCShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCShowPictureViewController.xib; sourceTree = "<group>"; };
 		D2BEC68B1D6209DF001A5275 /* NSDate+HCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HCExtension.h"; sourceTree = "<group>"; };
 		D2BEC68C1D6209DF001A5275 /* NSDate+HCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HCExtension.m"; sourceTree = "<group>"; };
 		D2FE96F11D635A47002BFCE9 /* HCTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTopicViewController.h; sourceTree = "<group>"; };
@@ -222,6 +230,9 @@
 				D2630F581D547A0E00D0C7EE /* HCRecommendTagViewController.m */,
 				D2FE96F11D635A47002BFCE9 /* HCTopicViewController.h */,
 				D2FE96F21D635A47002BFCE9 /* HCTopicViewController.m */,
+				D29207E21D6ACC8700D57FDF /* HCShowPictureViewController.h */,
+				D29207E31D6ACC8700D57FDF /* HCShowPictureViewController.m */,
+				D29207E41D6ACC8700D57FDF /* HCShowPictureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -249,6 +260,8 @@
 				D27A055E1D65AD0C00B8F16B /* HCTopicPictureView.h */,
 				D27A055F1D65AD0C00B8F16B /* HCTopicPictureView.m */,
 				D27A05611D65AD3700B8F16B /* HCTopicPictureView.xib */,
+				D28D05EC1D6C1DBF00C91ECE /* HCProgressView.h */,
+				D28D05ED1D6C1DBF00C91ECE /* HCProgressView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -494,6 +507,7 @@
 				D2630F561D54796E00D0C7EE /* HCRecommendTagCell.xib in Resources */,
 				D2174D1A1D4F90F7009EA3EB /* HCFriendTrendsViewController.xib in Resources */,
 				D27A05621D65AD3700B8F16B /* HCTopicPictureView.xib in Resources */,
+				D29207E61D6ACC8700D57FDF /* HCShowPictureViewController.xib in Resources */,
 				D2174CB71D4E0F00009EA3EB /* Assets.xcassets in Resources */,
 				D24DF7641D51CD02000D1284 /* HCRecommendCategoryCell.xib in Resources */,
 				D279E9EB1D606B3A008869B3 /* HCTopicCell.xib in Resources */,
@@ -572,7 +586,9 @@
 				D2174D081D4EFE36009EA3EB /* UIBarButtonItem+HCExtension.m in Sources */,
 				D279E9E91D606B28008869B3 /* HCTopicCell.m in Sources */,
 				D24DF7631D51CD02000D1284 /* HCRecommendCategoryCell.m in Sources */,
+				D29207E51D6ACC8700D57FDF /* HCShowPictureViewController.m in Sources */,
 				D260EEEC1D5B0C69002B84BE /* HCTextField.m in Sources */,
+				D28D05EE1D6C1DBF00C91ECE /* HCProgressView.m in Sources */,
 				D279E9E61D60669C008869B3 /* HCConst.m in Sources */,
 				D2174D041D4EFE36009EA3EB /* HCFriendTrendsViewController.m in Sources */,
 				D25FFAFD1D505A4C00085927 /* HCRecommendViewController.m in Sources */,
