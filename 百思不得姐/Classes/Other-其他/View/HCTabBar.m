@@ -7,6 +7,7 @@
 //
 
 #import "HCTabBar.h"
+#import "HCPublishViewController.h"
 
 @interface HCTabBar()
 
@@ -19,13 +20,26 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
+        // 设置tabBar背景图片
+        self.backgroundImage = [UIImage imageNamed:@"tabbar-light"];
+        // 添加发布按钮
         self.publishButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [self.publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
+        [self.publishButton addTarget:self action:@selector(publishBtnClicked) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.publishButton];
     }
     return self;
 }
+
+/**
+ * 点击中间加号按钮
+ */
+- (void)publishBtnClicked {
+    HCPublishViewController * publishVC = [[HCPublishViewController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:nil];
+}
+
 
 - (void)layoutSubviews {
     [super layoutSubviews];

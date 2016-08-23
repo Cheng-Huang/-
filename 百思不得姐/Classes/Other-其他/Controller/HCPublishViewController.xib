@@ -15,27 +15,36 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7XZ-tP-MLn" userLabel="背景图片">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7XZ-tP-MLn" userLabel="背景图片">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdM-qL-RXP" userLabel="取消按钮">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdM-qL-RXP" userLabel="取消按钮">
                     <rect key="frame" x="156" y="530" width="289" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="gdi-l6-vDK"/>
                         <constraint firstAttribute="width" constant="289" id="hIQ-9U-bwe"/>
                     </constraints>
                     <state key="normal" backgroundImage="shareButtonCancel"/>
+                    <state key="highlighted" backgroundImage="shareButtonCancelClick"/>
+                    <connections>
+                        <action selector="cancelBtnClicked" destination="-1" eventType="touchUpInside" id="HqZ-Ps-tTH"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="7XZ-tP-MLn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="06V-x0-Xeo"/>
                 <constraint firstAttribute="bottom" secondItem="OdM-qL-RXP" secondAttribute="bottom" constant="30" id="4Nz-3y-5i4"/>
                 <constraint firstItem="OdM-qL-RXP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Fe-bz-Atr"/>
+                <constraint firstItem="7XZ-tP-MLn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ebq-Zy-Msp"/>
+                <constraint firstAttribute="trailing" secondItem="7XZ-tP-MLn" secondAttribute="trailing" id="Fqt-Kk-tjn"/>
+                <constraint firstAttribute="bottom" secondItem="7XZ-tP-MLn" secondAttribute="bottom" id="haU-5H-sc0"/>
             </constraints>
         </view>
     </objects>
     <resources>
         <image name="shareBottomBackground" width="320" height="343"/>
         <image name="shareButtonCancel" width="289" height="40"/>
+        <image name="shareButtonCancelClick" width="289" height="40"/>
     </resources>
 </document>
